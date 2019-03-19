@@ -1,0 +1,11 @@
+type: edu
+files:
+- name: src/FunctionalLoops.scala
+  placeholders:
+  - offset: 179
+    length: 6
+    placeholder_text: // TODO
+  - offset: 200
+    length: 20
+    placeholder_text: // TODO
+- name: test/Test.scala

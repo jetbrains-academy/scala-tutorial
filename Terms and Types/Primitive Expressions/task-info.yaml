@@ -1,0 +1,11 @@
+type: edu
+files:
+- name: src/TermsAndTypes.scala
+  placeholders:
+  - offset: 146
+    length: 1
+    placeholder_text: // TODO
+  - offset: 183
+    length: 15
+    placeholder_text: Say hello
+- name: test/Test.scala

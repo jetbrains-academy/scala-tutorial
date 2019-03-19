@@ -1,0 +1,11 @@
+type: edu
+files:
+- name: src/StructuringInformation.scala
+  placeholders:
+  - offset: 360
+    length: 4
+    placeholder_text: // TODO
+  - offset: 389
+    length: 5
+    placeholder_text: // TODO
+- name: test/Test.scala

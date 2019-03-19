@@ -1,0 +1,9 @@
+type: edu
+files:
+- name: music_sheet.png
+- name: src/StructuringInformation.scala
+  placeholders:
+  - offset: 222
+    length: 23
+    placeholder_text: // TODO
+- name: test/Test.scala

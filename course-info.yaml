@@ -1,0 +1,14 @@
+title: Scala Tutorial
+language: English
+summary: This course contains excercises for the <a href="https://www.coursera.org/specializations/scala">Scala
+  MOOC</a>("Functional Programming Principles in Scala").
+programming_language: Scala
+content:
+- Terms and Types
+- Definitions and Evaluation
+- Functional Loops
+- Lexical Scopes
+- Tail Recursion
+- Structuring Information
+- Higher Order Functions
+- Standard Library

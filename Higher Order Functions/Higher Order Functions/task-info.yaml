@@ -1,0 +1,17 @@
+type: edu
+files:
+- name: src/HigherOrderFunctions.scala
+  placeholders:
+  - offset: 149
+    length: 3
+    placeholder_text: // TODO
+  - offset: 156
+    length: 3
+    placeholder_text: // TODO
+  - offset: 273
+    length: 1
+    placeholder_text: // TODO
+  - offset: 311
+    length: 1
+    placeholder_text: // TODO
+- name: test/Test.scala

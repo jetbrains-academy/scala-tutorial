@@ -1,0 +1,8 @@
+type: edu
+files:
+- name: src/DefinitionsAndEvaluation.scala
+  placeholders:
+  - offset: 167
+    length: 5
+    placeholder_text: // TODO
+- name: test/Test.scala

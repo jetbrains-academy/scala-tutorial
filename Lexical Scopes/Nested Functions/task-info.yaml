@@ -1,0 +1,8 @@
+type: edu
+files:
+- name: src/LexicalScopes.scala
+  placeholders:
+  - offset: 248
+    length: 2
+    placeholder_text: // TODO
+- name: test/Test.scala

@@ -1,0 +1,17 @@
+type: edu
+files:
+- name: src/StandardLibrary.scala
+  placeholders:
+  - offset: 132
+    length: 7
+    placeholder_text: // TODO
+  - offset: 165
+    length: 7
+    placeholder_text: // TODO
+  - offset: 350
+    length: 7
+    placeholder_text: // TODO
+  - offset: 454
+    length: 4
+    placeholder_text: // TODO
+- name: test/Test.scala
