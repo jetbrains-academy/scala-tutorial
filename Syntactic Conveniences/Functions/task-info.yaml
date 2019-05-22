@@ -1,0 +1,8 @@
+type: edu
+files:
+- name: test/TestSpec.scala
+  visible: false
+- name: build.sbt
+  visible: false
+- name: src/SyntacticConveniences.scala
+  visible: true

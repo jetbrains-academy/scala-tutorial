@@ -1,0 +1,21 @@
+type: edu
+files:
+- name: build.sbt
+  visible: false
+- name: src/SyntacticConveniences.scala
+  visible: true
+  placeholders:
+  - offset: 256
+    length: 10
+    placeholder_text: // TODO
+  - offset: 424
+    length: 5
+    placeholder_text: // TODO
+  - offset: 552
+    length: 2
+    placeholder_text: // TODO
+  - offset: 676
+    length: 2
+    placeholder_text: // TODO
+- name: test/Test.scala
+  visible: false
