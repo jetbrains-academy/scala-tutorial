@@ -1,0 +1,14 @@
+type: edu
+files:
+- name: build.sbt
+  visible: false
+- name: src/ImperativeProgramming.scala
+  visible: true
+  placeholders:
+  - offset: 250
+    length: 2
+    placeholder_text: // TODO
+- name: src/BankAccount.scala
+  visible: true
+- name: test/Test.scala
+  visible: false
