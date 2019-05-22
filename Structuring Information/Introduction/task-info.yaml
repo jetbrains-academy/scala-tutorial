@@ -1,9 +1,14 @@
 type: edu
 files:
 - name: music_sheet.png
+  visible: false
 - name: src/StructuringInformation.scala
+  visible: true
   placeholders:
   - offset: 222
     length: 23
     placeholder_text: // TODO
 - name: test/Test.scala
+  visible: false
+- name: build.sbt
+  visible: false

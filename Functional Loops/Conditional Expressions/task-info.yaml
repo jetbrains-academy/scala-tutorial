@@ -1,6 +1,7 @@
 type: edu
 files:
 - name: src/FunctionalLoops.scala
+  visible: true
   placeholders:
   - offset: 179
     length: 6
@@ -9,3 +10,6 @@ files:
     length: 20
     placeholder_text: // TODO
 - name: test/Test.scala
+  visible: false
+- name: build.sbt
+  visible: false

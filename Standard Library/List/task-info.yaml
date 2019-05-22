@@ -1,6 +1,7 @@
 type: edu
 files:
 - name: src/StandardLibrary.scala
+  visible: true
   placeholders:
   - offset: 169
     length: 19
@@ -9,3 +10,6 @@ files:
     length: 15
     placeholder_text: // TODO
 - name: test/Test.scala
+  visible: false
+- name: build.sbt
+  visible: false

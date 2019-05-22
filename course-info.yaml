@@ -3,6 +3,7 @@ language: English
 summary: This course contains excercises for the <a href="https://www.coursera.org/specializations/scala">Scala
   MOOC</a>("Functional Programming Principles in Scala").
 programming_language: Scala
+environment: sbt
 content:
 - Terms and Types
 - Definitions and Evaluation

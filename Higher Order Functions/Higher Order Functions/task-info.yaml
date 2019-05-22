@@ -1,6 +1,7 @@
 type: edu
 files:
 - name: src/HigherOrderFunctions.scala
+  visible: true
   placeholders:
   - offset: 149
     length: 3
@@ -15,3 +16,6 @@ files:
     length: 1
     placeholder_text: // TODO
 - name: test/Test.scala
+  visible: false
+- name: build.sbt
+  visible: false

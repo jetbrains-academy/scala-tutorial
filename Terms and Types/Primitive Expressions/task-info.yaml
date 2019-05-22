@@ -1,6 +1,7 @@
 type: edu
 files:
 - name: src/TermsAndTypes.scala
+  visible: true
   placeholders:
   - offset: 146
     length: 1
@@ -9,3 +10,6 @@ files:
     length: 15
     placeholder_text: Say hello
 - name: test/Test.scala
+  visible: false
+- name: build.sbt
+  visible: false

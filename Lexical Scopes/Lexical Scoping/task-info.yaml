@@ -1,6 +1,7 @@
 type: edu
 files:
 - name: src/LexicalScopes.scala
+  visible: true
   placeholders:
   - offset: 159
     length: 1
@@ -9,3 +10,6 @@ files:
     length: 1
     placeholder_text: // TODO
 - name: test/Test.scala
+  visible: false
+- name: build.sbt
+  visible: false

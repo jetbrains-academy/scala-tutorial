@@ -1,8 +1,12 @@
 type: edu
 files:
 - name: src/TailRecursion.scala
+  visible: true
   placeholders:
   - offset: 207
     length: 7
     placeholder_text: // TODO
 - name: test/Test.scala
+  visible: false
+- name: build.sbt
+  visible: false
