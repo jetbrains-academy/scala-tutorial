@@ -1,5 +1,5 @@
 
-lazy val `Functions-and-Data` = (project in file("."))
+lazy val `Object-Oriented-Programming` = (project in file("."))
   .settings(
     scalaSource in Compile := baseDirectory.value / "src",
     scalaSource in Test := baseDirectory.value / "test",
