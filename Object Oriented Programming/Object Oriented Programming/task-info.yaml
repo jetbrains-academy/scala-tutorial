@@ -11,12 +11,6 @@ files:
   - offset: 232
     length: 4
     placeholder_text: // TODO
-  - offset: 753
-    length: 2
-    placeholder_text: // TODO
-  - offset: 786
-    length: 2
-    placeholder_text: // TODO
 - name: scala_type_hierarchy.png
   visible: false
 - name: src/IntSet.scala
