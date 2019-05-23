@@ -1,0 +1,16 @@
+type: edu
+files:
+- name: build.sbt
+  visible: false
+- name: src/Rational.scala
+  visible: true
+- name: src/Sorting.scala
+  visible: true
+- name: src/TypeClasses.scala
+  visible: true
+  placeholders:
+  - offset: 563
+    length: 67
+    placeholder_text: // TODO
+- name: test/Test.scala
+  visible: false

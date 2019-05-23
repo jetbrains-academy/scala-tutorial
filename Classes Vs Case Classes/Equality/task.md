@@ -11,7 +11,7 @@ members, whereas this is not the case with regular classes.
 In the example, the same definitions of bank accounts lead to different
 values, whereas the same definitions of notes lead to equal values.
 
-As we have seen in the previous sections, stateful classes introduce a notion of ''identity''
+As we have seen in the previous sections, stateful classes introduce a notion of *identity*
 that does not exist in case classes. Indeed, the value of `BankAccount` can change over
 time whereas the value of a `Note` is immutable.
 
