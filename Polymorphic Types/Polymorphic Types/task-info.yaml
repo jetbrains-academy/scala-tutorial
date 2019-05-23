@@ -1,0 +1,17 @@
+type: edu
+files:
+- name: build.sbt
+  visible: false
+- name: src/PolymorphicTypes.scala
+  visible: true
+  placeholders:
+  - offset: 234
+    length: 1
+    placeholder_text: // TODO
+  - offset: 208
+    length: 1
+    placeholder_text: // TODO
+- name: test/Test.scala
+  visible: false
+- name: animals.svg
+  visible: false
