@@ -1,0 +1,20 @@
+type: edu
+files:
+- name: build.sbt
+  visible: false
+- name: src/ClassesVsCaseClasses.scala
+  visible: true
+  placeholders:
+  - offset: 193
+    length: 19
+    placeholder_text: // TODO
+  - offset: 275
+    length: 5
+    placeholder_text: // TODO
+  - offset: 339
+    length: 19
+    placeholder_text: // TODO
+- name: src/Note.scala
+  visible: true
+- name: test/Test.scala
+  visible: false

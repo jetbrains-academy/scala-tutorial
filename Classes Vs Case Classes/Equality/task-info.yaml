@@ -1,0 +1,19 @@
+type: edu
+files:
+- name: build.sbt
+  visible: false
+- name: src/BankAccount.scala
+  visible: true
+- name: src/Note.scala
+  visible: true
+- name: src/ClassesVsCaseClasses.scala
+  visible: true
+  placeholders:
+  - offset: 366
+    length: 4
+    placeholder_text: // TODO
+  - offset: 250
+    length: 5
+    placeholder_text: // TODO
+- name: test/Test.scala
+  visible: false
