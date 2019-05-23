@@ -1,0 +1,12 @@
+type: edu
+files:
+- name: build.sbt
+  visible: false
+- name: src/LazyEvaluation.scala
+  visible: true
+  placeholders:
+  - offset: 336
+    length: 6
+    placeholder_text: // TODO
+- name: test/Test.scala
+  visible: false
