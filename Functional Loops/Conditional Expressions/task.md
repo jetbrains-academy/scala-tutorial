@@ -7,9 +7,9 @@ has a conditional expression `if-else`.
 It looks like a `if-else` in Java, but is used for expressions, not statements.
 
 Example:
-
+~~~
     def abs(x: Double) = if (x >= 0) x else -x
-
+~~~
 `x >= 0` is a *predicate*, of type `Boolean`.
 
 ## Boolean Expressions 
