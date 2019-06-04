@@ -1,8 +1,9 @@
-import org.scalatest.FunSuite
+import org.scalatest.Spec
 
-class TestSpec extends FunSuite {
-  //TODO: implement your test here
-  test("First test") {
-    assert(false, "Tests not implemented for the task")
+class Test extends Spec {
+
+  def `check factorial`(): Unit = {
+    ComputingSquareRoot.sqrtExample()
   }
+
 }
