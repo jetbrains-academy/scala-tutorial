@@ -1,0 +1,15 @@
+type: edu
+files:
+- name: test/TestSpec.scala
+  visible: false
+- name: build.sbt
+  visible: false
+- name: src/ComputingSquareRoot.scala
+  visible: true
+  placeholders:
+  - offset: 359
+    length: 22
+    placeholder_text: //TODO
+  - offset: 266
+    length: 5
+    placeholder_text: //TODO
