@@ -57,3 +57,7 @@ into a `Left` value if it does not satisfy a given predicate:
 
 However, prior to Scala 2.12, `Either` was “unbiased”. You had to explicitly
 specify which “side” (`Left` or `Right`) you wanted to `map`.
+
+### Task
+
+Complete the ```either()``` function assertions providing the expected correct results.
