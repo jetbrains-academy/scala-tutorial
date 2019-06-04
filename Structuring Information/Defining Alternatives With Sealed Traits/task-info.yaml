@@ -3,10 +3,10 @@ files:
 - name: src/StructuringInformation.scala
   visible: true
   placeholders:
-  - offset: 360
+  - offset: 397
     length: 4
     placeholder_text: // TODO
-  - offset: 389
+  - offset: 426
     length: 5
     placeholder_text: // TODO
 - name: test/Test.scala
