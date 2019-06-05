@@ -1,0 +1,21 @@
+type: edu
+files:
+- name: build.sbt
+  visible: false
+- name: test/Test.scala
+  visible: false
+- name: src/TypeBounds.scala
+  visible: true
+  placeholders:
+  - offset: 430
+    length: 13
+    placeholder_text: //TODO
+  - offset: 482
+    length: 7
+    placeholder_text: //TODO
+  - offset: 522
+    length: 6
+    placeholder_text: //TODO
+  - offset: 560
+    length: 5
+    placeholder_text: //TODO
