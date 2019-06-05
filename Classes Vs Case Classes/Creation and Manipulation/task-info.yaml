@@ -5,9 +5,12 @@ files:
 - name: src/ClassesVsCaseClasses.scala
   visible: true
   placeholders:
-  - offset: 254
+  - offset: 284
     length: 3
     placeholder_text: // TODO
+  - offset: 327
+    length: 2
+    placeholder_text: //TODO
 - name: src/BankAccount.scala
   visible: true
 - name: src/Note.scala
