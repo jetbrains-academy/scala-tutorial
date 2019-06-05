@@ -1,0 +1,15 @@
+type: edu
+files:
+- name: build.sbt
+  visible: false
+- name: src/RationalArithmetic.scala
+  visible: true
+  placeholders:
+  - offset: 561
+    length: 71
+    placeholder_text: //TODO
+  - offset: 665
+    length: 71
+    placeholder_text: //TODO
+- name: test/Test.scala
+  visible: false
