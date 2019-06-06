@@ -1,3 +1,4 @@
 content:
 - Polymorphic Types
 - Type Bounds
+- Covariance

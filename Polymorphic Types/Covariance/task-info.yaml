@@ -1,0 +1,12 @@
+type: edu
+files:
+- name: build.sbt
+  visible: false
+- name: test/Test.scala
+  visible: false
+- name: src/Covariance.scala
+  visible: true
+  placeholders:
+  - offset: 670
+    length: 11
+    placeholder_text: //TODO
