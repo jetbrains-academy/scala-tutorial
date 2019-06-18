@@ -129,7 +129,7 @@ Consider the following type modeling a veterinary:
       }
 
 In such a case, intuitively, it makes sense to have `Vet[Mammal] <: Vet[Zebra]` because
-a vet that can treat any mammal is able to to treat a zebra in particular. This is
+a vet that can treat any mammal is able to treat a zebra in particular. This is
 an example of a contravariant type.
 
 ### Variance Checks 
@@ -208,9 +208,12 @@ But `prepend` is a natural method to have on immutable lists!
 How can we make it variance-correct?
 
 We can use a *lower bound*:
-
-      def prepend [U >: T](elem: U): Stream[U] = Stream.cons(elem, this)
-
+```
+      def prepend [U >: T](elem: U): Stream[U] = 
+```
+```
+      Stream.cons(elem, this)
+```
 This passes variance checks, because:
 
  - covariant type parameters may appear in lower bounds of method type parameters
