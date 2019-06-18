@@ -54,13 +54,13 @@ So the expression above is equivalent to:
       val nums = Nil.::(4).::(3).::(2).::(1)
 
 ## Manipulating Lists 
-
+ 
 It is possible to decompose lists with pattern matching:
 
  - `Nil`: the `Nil` constant,
  - `p :: ps`: A pattern that matches a list with a `head` matching `p` and a
    `tail` matching `ps`.
-
+```
       nums match {
         // Lists of `Int` that starts with `1` and then `2`
         case 1 :: 2 :: xs => …
@@ -73,7 +73,7 @@ It is possible to decompose lists with pattern matching:
         // A list that contains as only element another list that starts with `2`
         case List(2 :: xs) => …
       }
-
+```
 ## Exercise: Sorting Lists
 
 Suppose we want to sort a list of numbers in ascending order:
