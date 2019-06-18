@@ -70,9 +70,9 @@ Having defined `Symbol` as a sealed trait gives us the guarantee that
 the possible case of symbols is fixed. The compiler can leverage this
 knowledge to warn us if we write code that does not handle *all*
 the cases:
-{{{
+```scala
 def unexhaustive(): Unit = {
-sealed trait Symbol
+  sealed trait Symbol
 case class Note(name: String, duration: String, octave: Int) extends Symbol
 case class Rest(duration: String)                            extends Symbol
 
@@ -81,8 +81,7 @@ def nonExhaustiveDuration(symbol: Symbol): String =
     case Rest(duration) => duration
   }
 }
-}}
-
+```
 If we try to run the above code to see how the compiler informs us that
 we don’t handle all the cases in `nonExhaustiveDuration`.
 
