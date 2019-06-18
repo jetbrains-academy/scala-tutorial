@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 167
-    length: 5
+    length: 15
     placeholder_text: // TODO
 - name: test/Test.scala
   visible: false
