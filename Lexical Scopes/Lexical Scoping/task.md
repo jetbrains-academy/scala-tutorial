@@ -41,29 +41,37 @@ separated by semicolons:
 
 One issue with Scala's semicolon convention is how to write expressions that span
 several lines. For instance:
-
+```
       someLongExpression
+```
+```
     + someOtherExpression
-
+```
 would be interpreted as *two* expressions:
-
+```
       someLongExpression;
+```
+```
       + someOtherExpression
-
+```
 There are two ways to overcome this problem.
 
 You could write the multi-line expression in parentheses, because semicolons
 are never inserted inside `(…)`:
-
+```
       (someLongExpression
+```
+```
     + someOtherExpression)
-
+```
 Or you could write the operator on the first line, because this tells the Scala
 compiler that the expression is not yet finished:
-
+```
       someLongExpression +
+```
+```
       someOtherExpression
-
+```
 ## Top-Level Definitions
 
 In real Scala programs, `def` and `val` definitions must be written
@@ -138,16 +146,21 @@ These are:
 Here are the fully qualified names of some types and functions
 which you have seen so far:
 
-
+```
       Int                            scala.Int
+```
+```
       Boolean                        scala.Boolean
+```
+```
       Object                         java.lang.Object
+```
+```
       String                         java.lang.String
-
+```
 ## Writing Executable Programs 
-
-So far our examples of code were executed from your Web
-browser, but it is also possible to create standalone
+ 
+Let's consider creating standalone
 applications in Scala.
 
 Each such application contains an object with a `main` method.
