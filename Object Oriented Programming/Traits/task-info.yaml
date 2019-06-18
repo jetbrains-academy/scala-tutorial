@@ -13,3 +13,5 @@ files:
     placeholder_text: // TODO
 - name: test/Test.scala
   visible: false
+- name: scala_type_hierarchy.png
+  visible: false
