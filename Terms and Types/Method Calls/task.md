@@ -23,3 +23,7 @@ Methods can have *parameters*. They are supplied between parentheses.
 In the below examples, the `abs` method returns the absolute value of a
 number, and the `toUpperCase` method returns the target `String` in
 upper case.
+
+#### Task
+
+Complete the methods invocations.

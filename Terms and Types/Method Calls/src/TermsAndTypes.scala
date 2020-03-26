@@ -1,10 +1,13 @@
 import org.scalatest.{FlatSpec, Matchers}
 
-object TermsAndTypes extends FlatSpec with Matchers {
+object TermsAndTypes {
 
-  def methods(): Unit = {
-    "Hello, Scala!".toUpperCase shouldBe "HELLO, SCALA!"
-    -42.abs shouldBe 42
+  def upperCaseMethod(): String = {
+    "Hello, Scala!".toUpperCase
+  }
+
+  def absMethod(): Int = {
+    -42.abs
   }
 
 }

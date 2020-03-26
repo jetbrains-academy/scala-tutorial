@@ -1,8 +1,9 @@
-import org.scalatest.Spec
+import org.scalatest.{FlatSpec, Matchers}
 
-class Test extends Spec {
+class Test extends FlatSpec with Matchers{
 
   def `check methods`(): Unit = {
-    TermsAndTypes.methods()
+    TermsAndTypes.upperCaseMethod() shouldBe "HELLO, SCALA!"
+    TermsAndTypes.absMethod() shouldBe 42
   }
 }
