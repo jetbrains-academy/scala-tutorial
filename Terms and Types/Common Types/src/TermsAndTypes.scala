@@ -1,13 +1,26 @@
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.FlatSpec
 
-object TermsAndTypes extends FlatSpec with Matchers {
+object TermsAndTypes extends FlatSpec{
 
-  def moreMethods(): Unit = {
-    16.toHexString shouldBe "10"
-    (0 to 10).contains(10) shouldBe true
-    (0 until 10).contains(10) shouldBe false
-    "foo".drop(1) shouldBe "oo"
-    "bar".take(2) shouldBe "ba"
+  def toHexStringMethod(): String = {
+    16.toHexString
   }
 
+  def containsMethod(): Boolean = {
+    (0 to 10).contains(10)
+  }
+  def dropMethod(): String = {
+    "foo".drop(1)
+  }
+
+  def takeMethod(): String = {
+    "bar".take(2)
+  }
+
+  def main(args: Array[String]): Unit = {
+    println(toHexStringMethod())
+    println(containsMethod())
+    println(dropMethod())
+    println(takeMethod())
+  }
 }
