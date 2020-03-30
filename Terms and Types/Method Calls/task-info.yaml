@@ -3,11 +3,11 @@ files:
 - name: src/TermsAndTypes.scala
   visible: true
   placeholders:
-  - offset: 122
-    length: 12
+  - offset: 80
+    length: 11
     placeholder_text: //Invoke a method here making all of the letters uppercase
-  - offset: 174
-    length: 4
+  - offset: 132
+    length: 3
     placeholder_text: //invoke a method here to return an absolute value of the number
 - name: test/Test.scala
   visible: false
