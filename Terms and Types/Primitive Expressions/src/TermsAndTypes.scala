@@ -1,10 +1,15 @@
-import org.scalatest.{FlatSpec, Matchers}
+object TermsAndTypes{
 
-object TermsAndTypes extends FlatSpec with Matchers {
-
-  def evaluation(): Unit = {
-    1 + 2 shouldBe 3
-    "Hello, " ++ "Scala!" shouldBe "Hello, Scala!"
+  def sayHello(): String = {
+    "Hello, " ++ "Scala!"
   }
 
+  def sumTheNumbers(): Int = {
+    1 + 3
+  }
+
+  def main(args: Array[String]): Unit = {
+    println(sayHello())
+    println(sumTheNumbers())
+  }
 }
