@@ -1,5 +1,3 @@
-import org.scalatest.{FlatSpec, Matchers}
-
 object TermsAndTypes {
 
   def upperCaseMethod(): String = {
@@ -8,6 +6,11 @@ object TermsAndTypes {
 
   def absMethod(): Int = {
     -42.abs
+  }
+
+  def main(args: Array[String]): Unit = {
+    println(upperCaseMethod())
+    println(absMethod())
   }
 
 }

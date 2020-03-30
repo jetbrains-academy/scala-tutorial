@@ -5,7 +5,8 @@ files:
   placeholders:
   - offset: 73
     length: 1
-    placeholder_text: //You should insert an Int here for types to match
+    placeholder_text: //insert the upper boundary of the range here, it should be
+      of an appropriate type
 - name: test/Test.scala
   visible: false
 - name: build.sbt

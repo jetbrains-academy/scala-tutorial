@@ -1,6 +1,4 @@
-import org.scalatest.FlatSpec
-
-object TermsAndTypes extends FlatSpec{
+object TermsAndTypes{
 
   def toHexStringMethod(): String = {
     16.toHexString
