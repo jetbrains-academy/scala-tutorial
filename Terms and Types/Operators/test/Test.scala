@@ -1,8 +1,10 @@
-import org.scalatest.Spec
+import org.scalatest.refspec.RefSpec
 
-class Test extends Spec {
+class Test extends RefSpec {
 
   def `check static typing`(): Unit = {
-    TermsAndTypes.staticTyping()
+    withClue("There is an Error, as you need to put an integer as the end of range.") {
+      assertCompiles("TermsAndTypes.staticTyping()")
+    }
   }
 }
