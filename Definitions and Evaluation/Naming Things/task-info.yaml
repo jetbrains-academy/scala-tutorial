@@ -3,9 +3,9 @@ files:
 - name: src/DefinitionsAndEvaluation.scala
   visible: true
   placeholders:
-  - offset: 167
+  - offset: 60
     length: 15
-    placeholder_text: // TODO
+    placeholder_text: // Complete the method evaluating the area of a disk
 - name: test/Test.scala
   visible: false
 - name: build.sbt
