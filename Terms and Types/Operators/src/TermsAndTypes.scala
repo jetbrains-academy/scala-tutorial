@@ -1,6 +1,9 @@
 object TermsAndTypes {
 
-  def staticTyping(): Unit =
-    1 to 1
+  def staticTyping(): Range.Inclusive =
+    1 to 5
 
+  def main(args: Array[String]): Unit = {
+    println(staticTyping())
+  }
 }

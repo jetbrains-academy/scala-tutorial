@@ -3,9 +3,9 @@ files:
 - name: src/TermsAndTypes.scala
   visible: true
   placeholders:
-  - offset: 62
+  - offset: 73
     length: 1
-    placeholder_text: // TODO
+    placeholder_text: //You should insert an Int here for types to match
 - name: test/Test.scala
   visible: false
 - name: build.sbt
