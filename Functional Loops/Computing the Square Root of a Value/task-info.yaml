@@ -5,10 +5,10 @@ files:
 - name: src/ComputingSquareRoot.scala
   visible: true
   placeholders:
-  - offset: 155
+  - offset: 65
     length: 5
     placeholder_text: //you can just return the guess here
-  - offset: 244
+  - offset: 154
     length: 22
     placeholder_text: //here we need to put an expression for evaluating a better
       guess
