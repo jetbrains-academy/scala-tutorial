@@ -3,12 +3,9 @@ files:
 - name: src/DefinitionsAndEvaluation.scala
   visible: true
   placeholders:
-  - offset: 269
-    length: 3
-    placeholder_text: // TODO
-  - offset: 277
-    length: 18
-    placeholder_text: // TODO
+  - offset: 174
+    length: 13
+    placeholder_text: /*insert an expression using both parameters*/
 - name: test/Test.scala
   visible: false
 - name: build.sbt

@@ -1,7 +1,2 @@
-
-## Methods
-
-Definitions can have parameters. 
-
-## Excercise
-Let’s define a method that computes the area of a disc, given its radius.
+## Exercise
+Let’s split the method from the previous task into two parts, so they could be used apart from each other.
