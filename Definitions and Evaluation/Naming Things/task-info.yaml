@@ -3,9 +3,12 @@ files:
 - name: src/DefinitionsAndEvaluation.scala
   visible: true
   placeholders:
-  - offset: 60
-    length: 15
+  - offset: 0
+    length: 0
     placeholder_text: // Complete the method evaluating the area of a disk
+  - offset: 68
+    length: 5
+    placeholder_text: // the expression lacks the square of the radius
 - name: test/Test.scala
   visible: false
 - name: build.sbt
