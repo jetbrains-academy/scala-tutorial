@@ -1,11 +1,9 @@
-import org.scalatest.{FlatSpec, Matchers}
+object DefinitionsAndEvaluation{
 
-object DefinitionsAndEvaluation extends FlatSpec with Matchers {
+  def square(x: Double) = Math.PI * x * x
 
-  def usingSquare(): Unit = {
-    def square(x: Double) = Math.PI * x * x
-
-    square(3.0) shouldBe 9.0 * Math.PI
+  def main(args: Array[String]): Unit = {
+    println(square(5))
   }
 
 }

@@ -3,7 +3,7 @@ files:
 - name: src/DefinitionsAndEvaluation.scala
   visible: true
   placeholders:
-  - offset: 167
+  - offset: 68
     length: 5
     placeholder_text: // TODO
     dependency:
@@ -12,7 +12,7 @@ files:
       file: src/DefinitionsAndEvaluation.scala
       placeholder: 1
       is_visible: false
-  - offset: 223
+  - offset: 122
     length: 14
     placeholder_text: // TODO
 - name: test/Test.scala
