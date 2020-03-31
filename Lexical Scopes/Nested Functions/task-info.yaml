@@ -3,9 +3,12 @@ files:
 - name: src/LexicalScopes.scala
   visible: true
   placeholders:
-  - offset: 248
-    length: 2
-    placeholder_text: // TODO
+  - offset: 75
+    length: 1
+    placeholder_text: /*declare a name for the function here*/
+  - offset: 127
+    length: 1
+    placeholder_text: /*use the name you declared previously*/
 - name: test/Test.scala
   visible: false
 - name: build.sbt

@@ -1,6 +1,4 @@
-import org.scalatest.{FlatSpec, Matchers}
-
-object LexicalScopes extends FlatSpec with Matchers {
+object LexicalScopes {
   def scopeRules(): Unit = {
     val x = 0
 
@@ -10,6 +8,11 @@ object LexicalScopes extends FlatSpec with Matchers {
       val x = f(3)
       x * x
     } + x
-    result shouldBe 16
+
+    println(result)
+  }
+
+  def main(args: Array[String]): Unit = {
+    scopeRules()
   }
 }
