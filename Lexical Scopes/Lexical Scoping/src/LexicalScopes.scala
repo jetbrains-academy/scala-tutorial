@@ -1,7 +1,5 @@
-import org.scalatest.{FlatSpec, Matchers}
-
-object LexicalScopes extends FlatSpec with Matchers {
-  def objectScopes(): Unit = {
+object LexicalScopes {
+  def objectScopes(): Int = {
     object Foo {
       val x = 1
     }
@@ -17,6 +15,10 @@ object LexicalScopes extends FlatSpec with Matchers {
       val y = x + Foo.x
     }
 
-    Baz.y shouldBe 3
+    Baz.y
+  }
+
+  def main(args: Array[String]): Unit = {
+    println(objectScopes())
   }
 }

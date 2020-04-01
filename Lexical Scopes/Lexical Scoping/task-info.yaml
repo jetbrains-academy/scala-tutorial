@@ -3,12 +3,12 @@ files:
 - name: src/LexicalScopes.scala
   visible: true
   placeholders:
-  - offset: 159
+  - offset: 185
     length: 1
-    placeholder_text: // TODO
-  - offset: 195
-    length: 1
-    placeholder_text: // TODO
+    placeholder_text: /*insert the x variable from the Bar object here*/
+  - offset: 189
+    length: 5
+    placeholder_text: /*here you need to insert the x value from the Foo object*/
 - name: test/Test.scala
   visible: false
 - name: build.sbt
