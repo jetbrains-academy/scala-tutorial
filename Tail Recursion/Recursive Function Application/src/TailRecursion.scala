@@ -1,19 +1,18 @@
-import org.scalatest.{FlatSpec, Matchers}
-
 import scala.annotation.tailrec
 
-object TailRecursion extends FlatSpec with Matchers {
-  def tailRecFactorial(): Unit = {
-    def factorial(n: Int): Int = {
-      @tailrec
-      def iter(x: Int, result: Int): Int =
-        if (x == 0) result
-        else iter(x - 1, result * x)
+object TailRecursion{
 
-      iter(n, 1)
-    }
+  def factorial(n: Int): Int = {
+    @tailrec
+    def iter(x: Int, result: Int): Int =
+      if (x == 0) result
+      else iter(x - 1, result * x)
 
-    factorial(3) shouldBe 6
-    factorial(4) shouldBe 24
+    iter(n, 1)
+  }
+
+
+  def main(args: Array[String]): Unit = {
+    println(factorial(5))
   }
 }
