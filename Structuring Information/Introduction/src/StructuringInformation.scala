@@ -1,11 +1,14 @@
-import org.scalatest.{FlatSpec, Matchers}
+object StructuringInformation{
+  case class Note(name: String, duration: String, octave: Int)
 
-object StructuringInformation extends FlatSpec with Matchers {
-  def caseClassProjection(): Unit = {
-    case class Note(name: String, duration: String, octave: Int)
-    val c3 = Note("C", "Quarter", 3)
-    c3.name shouldBe "C"
-    c3.duration shouldBe "Quarter"
-    c3.octave shouldBe 3
+  def setUpC3Note(): Note = {
+    Note("C", "Quarter", 3)
+  }
+
+  def main(args: Array[String]): Unit = {
+    val note = setUpC3Note()
+    println("Name: " + note.name)
+    print("duration: " + note.duration)
+    print("octave: " + note.octave)
   }
 }
