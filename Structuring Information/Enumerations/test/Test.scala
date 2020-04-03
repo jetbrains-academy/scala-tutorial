@@ -1,9 +1,13 @@
-import org.scalatest.Spec
+import StructuringInformation.{Half, Quarter, Whole, fractionOfWhole}
+import org.scalatest.Matchers
+import org.scalatest.refspec.RefSpec
 
-class Test extends Spec {
+class Test extends RefSpec with Matchers{
 
   def `check algebraic data types`(): Unit = {
-    StructuringInformation.adts()
+    fractionOfWhole(Half) shouldBe 0.5
+    fractionOfWhole(Quarter) shouldBe 0.25
+    fractionOfWhole(Whole) shouldBe 1
   }
 
 }
