@@ -3,12 +3,15 @@ files:
 - name: src/StructuringInformation.scala
   visible: true
   placeholders:
-  - offset: 397
-    length: 4
-    placeholder_text: //TODO
-  - offset: 426
-    length: 5
-    placeholder_text: //TODO
+  - offset: 243
+    length: 14
+    placeholder_text: //extend the sealed trait Symbol here
+  - offset: 484
+    length: 17
+    placeholder_text: //return a result of equality check here
+  - offset: 366
+    length: 8
+    placeholder_text: //we need to return a similar to the Rest field
 - name: test/Test.scala
   visible: false
 - name: build.sbt
