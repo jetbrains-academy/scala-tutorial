@@ -3,10 +3,11 @@ files:
 - name: src/StandardLibrary.scala
   visible: true
   placeholders:
-  - offset: 169
+  - offset: 60
     length: 19
-    placeholder_text: // TODO
-  - offset: 285
+    placeholder_text: /*insert the correct condition for evaluating if the list is
+      sorted*/
+  - offset: 170
     length: 15
     placeholder_text: // TODO
 - name: test/Test.scala
