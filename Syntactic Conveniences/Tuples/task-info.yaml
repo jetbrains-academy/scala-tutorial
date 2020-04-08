@@ -5,17 +5,8 @@ files:
 - name: src/SyntacticConveniences.scala
   visible: true
   placeholders:
-  - offset: 256
-    length: 10
-    placeholder_text: // TODO
-  - offset: 424
-    length: 5
-    placeholder_text: // TODO
-  - offset: 552
-    length: 2
-    placeholder_text: // TODO
-  - offset: 676
-    length: 2
-    placeholder_text: // TODO
+  - offset: 152
+    length: 6
+    placeholder_text: /*create the tuple here*/
 - name: test/Test.scala
   visible: false

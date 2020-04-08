@@ -1,20 +1,10 @@
-import org.scalatest.Spec
+import org.scalatest.Matchers
+import org.scalatest.refspec.RefSpec
 
-class Test extends Spec {
+class Test extends RefSpec with Matchers{
 
-  def `test tuples`(): Unit = {
-    SyntacticConveniences.tuples()
+  def `test pair`(): Unit = {
+    SyntacticConveniences.pair(37, "Test") shouldBe (37, "Test")
   }
 
-  def `tuple extraction`(): Unit = {
-    SyntacticConveniences.tupleExtraction()
-  }
-
-  def `tuple extraction 2`(): Unit = {
-    SyntacticConveniences.tupleExtraction2()
-  }
-
-  def `tuple manipulation`(): Unit = {
-    SyntacticConveniences.tupleManipulation()
-  }
 }
