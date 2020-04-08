@@ -43,7 +43,7 @@ It is possible to decompose options with pattern matching:
           case Some(y) => y.toString
         }
 
-## Excercise
+## Exercise
 
 1. Transform an optional value with `map`.
 2. Filter values with `filter`.

@@ -2,19 +2,25 @@ import org.scalatest.{FlatSpec, Matchers}
 
 object StandardLibrary extends FlatSpec with Matchers {
 
-  def optionMap(): Unit = {
-    Some(1).map(x => x + 1) shouldBe Some(2)
-    None.map((x: Int) => x + 1) shouldBe None
+  def optionMap(x: Option[Int]) : Option[Int]= {
+    x.map(x => x + 1)
   }
 
-  def optionFilter(): Unit = {
-    Some(1).filter(x => x % 2 == 0) shouldBe None
-    Some(2).filter(x => x % 2 == 0) shouldBe Some(2)
+  def optionFilter(x: Option[Int]): Option[Int] = {
+    x.filter(x => x % 2 == 0)
   }
 
-  def optionFlatMap(): Unit = {
-    Some(1).flatMap(x => Some(x + 1)) shouldBe Some(2)
-    None.flatMap((x: Int) => Some(x + 1)) shouldBe None
+  def optionFlatMap(x: Option[Int]): Option[Int] = {
+    x.flatMap(x => Some(x + 1))
+  }
+
+  def main(args: Array[String]): Unit = {
+    println(optionMap(Some(7)))
+    println(optionMap(None))
+    println(optionFilter(Some(5)))
+    println(optionFilter(Some(6)))
+    println(optionFlatMap(Some(4)))
+    println(optionFlatMap(None))
   }
 
 }
