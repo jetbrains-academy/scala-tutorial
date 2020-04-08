@@ -60,4 +60,4 @@ specify which “side” (`Left` or `Right`) you wanted to `map`.
 
 ### Task
 
-Complete the ```either()``` function assertions providing the expected correct results.
+Complete the ```tripleEither()``` function, so it maps the successful results with the ```triple()``` function.

@@ -1,15 +1,12 @@
-import org.scalatest.{FlatSpec, Matchers}
+object StandardLibrary{
 
-object StandardLibrary extends FlatSpec with Matchers {
+  def triple(x: Int): Int = 3 * x
 
-  def either(): Unit = {
-    def triple(x: Int): Int = 3 * x
+  def tripleEither(x: Either[String, Int]): Either[String, Int] =
+    x.right.map(triple)
 
-    def tripleEither(x: Either[String, Int]): Either[String, Int] =
-      x.right.map(triple)
-
-    tripleEither(Right(1)) shouldBe (Right[String, Int](3): Either[String, Int])
-    tripleEither(Left("not a number")) shouldBe (Left[String, Int]("not a number"): Either[String, Int])
+  def main(args: Array[String]): Unit = {
+    println(tripleEither(Right(1)))
+    println(tripleEither(Left("not a number")))
   }
-
 }

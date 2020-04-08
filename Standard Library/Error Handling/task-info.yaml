@@ -3,12 +3,9 @@ files:
 - name: src/StandardLibrary.scala
   visible: true
   placeholders:
-  - offset: 293
-    length: 44
-    placeholder_text: // TODO
-  - offset: 386
-    length: 56
-    placeholder_text: // TODO
+  - offset: 130
+    length: 19
+    placeholder_text: /*map the successful results with triple()*/
 - name: test/Test.scala
   visible: false
 - name: build.sbt
