@@ -124,14 +124,7 @@ every value ‘y’ in ‘ys’, return ‘(x, y)’”.
 
 ## Putting Things Together
 
-Here is an example that puts everything together:
-
-      for {
-        x <- xs if x % 2 == 0
-        y <- ys
-      } yield (x, y)
-
-The equivalent de-sugared code is the following:
+Complete the function, so it becomes an equivalent of the following de-sugared code:
 
       xs.filter { x =>
         x % 2 == 0
