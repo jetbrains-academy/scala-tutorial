@@ -1,12 +1,14 @@
-import org.scalatest.Spec
+import SyntacticConveniences.{greet, greetLouder}
+import org.scalatest.Matchers
+import org.scalatest.refspec.RefSpec
 
-class Test extends Spec {
+class Test extends RefSpec with Matchers{
 
-  def `string interpolation`(): Unit = {
-    SyntacticConveniences.stringInterpolation()
+  def `check greet`(): Unit = {
+    greet("Test") shouldBe "Hello, Test!"
   }
 
-  def `string interpolation 2`(): Unit = {
-    SyntacticConveniences.stringInterpolation2()
+  def `check greetLouder`(): Unit = {
+    greetLouder("Test") shouldBe "Hello, TEST!"
   }
 }

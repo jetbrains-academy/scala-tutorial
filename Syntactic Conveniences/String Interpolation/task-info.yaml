@@ -7,9 +7,9 @@ files:
 - name: src/SyntacticConveniences.scala
   visible: true
   placeholders:
-  - offset: 295
-    length: 30
-    placeholder_text: // TODO
-  - offset: 476
-    length: 13
-    placeholder_text: // TODO
+  - offset: 70
+    length: 1
+    placeholder_text: /*insert the correct prefix here*/
+  - offset: 143
+    length: 19
+    placeholder_text: /*introduce the dynamic value here and make it uppercase*/

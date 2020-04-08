@@ -1,18 +1,13 @@
-import org.scalatest.{FlatSpec, Matchers}
+object SyntacticConveniences{
+  def greet(name: String): String =
+    s"Hello, $name!"
 
-object SyntacticConveniences extends FlatSpec with Matchers {
-  def stringInterpolation(): Unit = {
-    def greet(name: String): String =
-      s"Hello, $name!"
+  def greetLouder(name: String): String =
+    s"Hello, ${name.toUpperCase}!"
 
-    greet("Scala") shouldBe "Hello, Scala!"
-    greet("Functional Programming") shouldBe "Hello, Functional Programming!"
-  }
-
-  def stringInterpolation2(): Unit = {
-    def greet(name: String): String =
-      s"Hello, ${name.toUpperCase}!"
-
-    greet("Scala") shouldBe "Hello, SCALA!"
+  def main(args: Array[String]): Unit = {
+    println(greet("Scala"))
+    println(greet("Functional Programming"))
+    println(greetLouder("Scala"))
   }
 }
