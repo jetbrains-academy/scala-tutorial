@@ -4,11 +4,14 @@ files:
   visible: false
 - name: src/ImperativeProgramming.scala
   visible: true
-  placeholders:
-  - offset: 250
-    length: 2
-    placeholder_text: // TODO
 - name: src/BankAccount.scala
   visible: true
+  placeholders:
+  - offset: 112
+    length: 16
+    placeholder_text: /*add the expression for the updated balance*/
+  - offset: 239
+    length: 16
+    placeholder_text: /*add the expression for the updated balance*/
 - name: test/Test.scala
   visible: false
