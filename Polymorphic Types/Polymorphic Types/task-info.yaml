@@ -5,12 +5,12 @@ files:
 - name: src/PolymorphicTypes.scala
   visible: true
   placeholders:
-  - offset: 234
+  - offset: 97
     length: 1
-    placeholder_text: // TODO
-  - offset: 208
+    placeholder_text: /*insert what we should return in case of Nil*/
+  - offset: 121
     length: 1
-    placeholder_text: // TODO
+    placeholder_text: /*insert what we should add for an element of the list*/
 - name: test/Test.scala
   visible: false
 - name: animals.svg
