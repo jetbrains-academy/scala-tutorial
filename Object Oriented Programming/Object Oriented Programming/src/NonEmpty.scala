@@ -1,4 +1,3 @@
-
 class NonEmpty(elem: Int, left: IntSet, right: IntSet) extends IntSet {
 
   def contains(x: Int): Boolean =

@@ -1,8 +1,10 @@
-import org.scalatest.Spec
+import org.scalatest.Matchers
+import org.scalatest.refspec.RefSpec
 
-class Test extends Spec {
+class Test extends RefSpec with Matchers{
 
   def `dynamic binding`(): Unit = {
-    ObjectOrientedProgramming.dynamicBinding()
+    Empty contains 1 shouldBe false
+    ObjectOrientedProgramming.nonEmptyExample contains 7 shouldBe true
   }
 }

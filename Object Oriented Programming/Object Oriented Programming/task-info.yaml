@@ -5,12 +5,9 @@ files:
 - name: src/ObjectOrientedProgramming.scala
   visible: true
   placeholders:
-  - offset: 172
-    length: 5
-    placeholder_text: // TODO
-  - offset: 232
-    length: 4
-    placeholder_text: // TODO
+  - offset: 101
+    length: 29
+    placeholder_text: /*Create a NonEmpty contatining 7*/
 - name: scala_type_hierarchy.png
   visible: false
 - name: src/IntSet.scala
