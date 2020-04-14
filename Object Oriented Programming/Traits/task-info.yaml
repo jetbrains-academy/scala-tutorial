@@ -5,12 +5,12 @@ files:
 - name: src/ObjectOrientedProgramming.scala
   visible: true
   placeholders:
-  - offset: 621
-    length: 2
-    placeholder_text: // TODO
-  - offset: 654
-    length: 2
-    placeholder_text: // TODO
+  - offset: 482
+    length: 5
+    placeholder_text: /*insert an appropriate expression*/
+  - offset: 392
+    length: 5
+    placeholder_text: /*insert an appropriate expression*/
 - name: test/Test.scala
   visible: false
 - name: scala_type_hierarchy.png

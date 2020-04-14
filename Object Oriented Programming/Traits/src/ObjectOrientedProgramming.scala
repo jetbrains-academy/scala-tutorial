@@ -1,8 +1,6 @@
 import org.scalatest.{FlatSpec, Matchers}
 
-object ObjectOrientedProgramming extends FlatSpec with Matchers {
-
-  def reducer(): Unit = {
+object ObjectOrientedProgramming{
     abstract class Reducer(init: Int) {
       def combine(x: Int, y: Int): Int
       def reduce(xs: List[Int]): Int =
@@ -22,7 +20,8 @@ object ObjectOrientedProgramming extends FlatSpec with Matchers {
 
     val nums = List(1, 2, 3, 4)
 
-    Product.reduce(nums) shouldBe 24
-    Sum.reduce(nums) shouldBe 10
+  def main(args: Array[String]): Unit = {
+    println(Product.reduce(nums))
+    println(Sum.reduce(nums))
   }
 }
