@@ -5,14 +5,14 @@ files:
 - name: src/ImperativeProgramming.scala
   visible: true
   placeholders:
-  - offset: 202
+  - offset: 80
     length: 1
-    placeholder_text: // TODO
-  - offset: 225
+    placeholder_text: /*insert the initial resul value*/
+  - offset: 99
     length: 1
-    placeholder_text: // TODO
-  - offset: 300
+    placeholder_text: /*insert the initial i value*/
+  - offset: 162
     length: 1
-    placeholder_text: // TODO
+    placeholder_text: /*insert the i step*/
 - name: test/Test.scala
   visible: false
