@@ -1,8 +1,13 @@
-import org.scalatest.Spec
+import ClassesVsCaseClasses.{aliceAccount, bobAccount, c3, cThree}
+import org.scalatest.refspec.RefSpec
+import org.scalatest.Matchers
 
-class Test extends Spec {
+class Test extends RefSpec with Matchers{
 
   def `test equality`(): Unit = {
-    ClassesVsCaseClasses.equality()
+
+    aliceAccount == bobAccount shouldBe false
+    c3 == cThree shouldBe true
+
   }
 }

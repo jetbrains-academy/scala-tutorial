@@ -9,11 +9,17 @@ files:
 - name: src/ClassesVsCaseClasses.scala
   visible: true
   placeholders:
-  - offset: 366
-    length: 4
-    placeholder_text: // TODO
-  - offset: 250
-    length: 5
-    placeholder_text: // TODO
+  - offset: 50
+    length: 15
+    placeholder_text: /*create a new BankAccount here*/
+  - offset: 87
+    length: 15
+    placeholder_text: /*create a new BankAccount here*/
+  - offset: 119
+    length: 23
+    placeholder_text: /*create a new c3 note here with a quarter duration*/
+  - offset: 158
+    length: 23
+    placeholder_text: /*create a new c3 note here with a quarter duration*/
 - name: test/Test.scala
   visible: false
