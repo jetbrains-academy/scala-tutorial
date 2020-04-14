@@ -7,9 +7,11 @@ files:
   placeholders:
   - offset: 561
     length: 71
-    placeholder_text: //TODO
+    placeholder_text: /*create a Rational with appropriate expressions for numerator
+      and denomenator*/
   - offset: 665
     length: 71
-    placeholder_text: //TODO
+    placeholder_text: /*create a Rational with appropriate expressions for numerator
+      and denomenator*/
 - name: test/Test.scala
   visible: false

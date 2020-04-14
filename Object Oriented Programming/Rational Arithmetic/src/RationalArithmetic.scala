@@ -28,13 +28,13 @@ object RationalArithmetic extends FlatSpec with Matchers {
       )
   }
 
-  def rationalArithmeticTest(): Unit = {
-    val firstRational = new Rational(1, 2)
-    val secondRational = new Rational(5, 7)
+  def main(args: Array[String]): Unit = {
+    val firstRational = new Rational(3, 4)
+    val secondRational = new Rational(11, 13)
 
-    (firstRational * secondRational).numer shouldBe 5
-    (firstRational * secondRational).denom shouldBe 14
-    (firstRational / secondRational).numer shouldBe 7
-    (firstRational / secondRational).denom shouldBe 10
+    println((firstRational * secondRational).numer)
+    println((firstRational * secondRational).denom)
+    println((firstRational / secondRational).numer)
+    println((firstRational / secondRational).denom)
   }
 }
