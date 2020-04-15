@@ -5,8 +5,8 @@ files:
 - name: src/LazyEvaluation.scala
   visible: true
   placeholders:
-  - offset: 373
-    length: 1
-    placeholder_text: // TODO
+  - offset: 208
+    length: 23
+    placeholder_text: /*call the streamRange for the rest of the list*/
 - name: test/Test.scala
   visible: false
