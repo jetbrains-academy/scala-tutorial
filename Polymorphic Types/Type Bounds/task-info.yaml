@@ -7,15 +7,9 @@ files:
 - name: src/TypeBounds.scala
   visible: true
   placeholders:
-  - offset: 430
-    length: 13
-    placeholder_text: //TODO
-  - offset: 482
-    length: 7
-    placeholder_text: //TODO
-  - offset: 522
-    length: 6
-    placeholder_text: //TODO
-  - offset: 560
+  - offset: 149
     length: 5
-    placeholder_text: //TODO
+    placeholder_text: /*insert a correct lower bound Type to include Zebra*/
+  - offset: 158
+    length: 6
+    placeholder_text: /*insert an upper bound type to include Animal*/

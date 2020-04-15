@@ -1,6 +1,4 @@
-import org.scalatest.{FlatSpec, Matchers}
-
-object TypeBounds extends FlatSpec with Matchers {
+object TypeBounds{
   class Animal
 
   class Reptile extends Animal
@@ -9,18 +7,18 @@ object TypeBounds extends FlatSpec with Matchers {
 
   class Zebra extends Mammal
 
-  def boundsExercise(): Unit = {
-    def selection[A >: Zebra <: Animal](a: A): A =
-      a
+  def selection[A >: Zebra <: Animal](a: A): A =
+    a
 
-    val unknownAnimal = new Animal
-    val reptile = new Reptile
-    val mammal = new Mammal
-    val zebra = new Zebra
+  val unknownAnimal = new Animal
+  val reptile = new Reptile
+  val mammal = new Mammal
+  val zebra = new Zebra
 
-    selection(unknownAnimal) shouldBe unknownAnimal
-    selection(reptile) shouldBe reptile
-    selection(mammal) shouldBe mammal
-    selection(zebra) shouldBe zebra
+  def main(args: Array[String]): Unit = {
+    println(selection(unknownAnimal))
+    println(selection(reptile ))
+    println(selection(mammal))
+    println(selection(zebra))
   }
 }
