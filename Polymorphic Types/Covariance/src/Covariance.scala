@@ -1,6 +1,4 @@
-import org.scalatest.{FlatSpec, Matchers}
-
-object Covariance extends FlatSpec with Matchers {
+object Covariance {
   class Animal[+T](val animal: T)
 
   class Reptile extends Animal
@@ -11,7 +9,7 @@ object Covariance extends FlatSpec with Matchers {
 
   class AnimalVet(val animal:Animal[Mammal])
 
-  def covarianceExercise(): Unit = {
+  def main(args: Array[String]): Unit = {
     val reptile = new Reptile
     val zebra = new Zebra
 
@@ -21,7 +19,8 @@ object Covariance extends FlatSpec with Matchers {
     //Uncomment the line below to see if the reptileAnimal passes type-checking
     //val reptileVet = new AnimalVet(reptileAnimal)
     val zebraVet = new AnimalVet(zebraAnimal)
-    zebraVet.animal shouldBe zebraAnimal
+
+    println(zebraVet)
   }
 }
 
