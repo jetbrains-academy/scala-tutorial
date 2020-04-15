@@ -9,8 +9,8 @@ files:
 - name: src/TypeClasses.scala
   visible: true
   placeholders:
-  - offset: 563
+  - offset: 433
     length: 67
-    placeholder_text: // TODO
+    placeholder_text: /*complete the expression*/
 - name: test/Test.scala
   visible: false
