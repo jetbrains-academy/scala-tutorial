@@ -3,8 +3,8 @@ files:
 - name: src/DefinitionsAndEvaluation.scala
   visible: true
   placeholders:
-  - offset: 1
-    length: 5
+  - offset: 0
+    length: 6
     placeholder_text: // TODO
     dependency:
       lesson: Definitions and Evaluation
@@ -12,7 +12,7 @@ files:
       file: src/DefinitionsAndEvaluation.scala
       placeholder: 1
       is_visible: false
-  - offset: 122
+  - offset: 123
     length: 14
     placeholder_text: // reuse the square method here
 - name: test/Test.scala

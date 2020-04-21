@@ -1,4 +1,4 @@
-object DefinitionsAndEvaluation{
+object DefinitionsAndEvaluation {
 
   def square(x: Double): Double = x * x
 
