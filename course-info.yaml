@@ -5,6 +5,7 @@ summary: This course contains excercises for the <a href="https://www.coursera.o
 programming_language: Scala
 environment: sbt
 content:
+- Navigating Around
 - Terms and Types
 - Definitions and Evaluation
 - Functional Loops

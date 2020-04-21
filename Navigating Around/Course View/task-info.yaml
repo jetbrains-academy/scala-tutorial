@@ -1,0 +1,8 @@
+type: theory
+files:
+- name: src/Main.scala
+  visible: true
+- name: build.sbt
+  visible: false
+- name: edu_course_view.png
+  visible: false
