@@ -367,6 +367,6 @@ The following table lists the characters in increasing order of priority precede
       * / %
       (all other special characters)
 
-## Task
+## Exercise
 
 Complete the multiplication and division definitions for ```Rational```. 

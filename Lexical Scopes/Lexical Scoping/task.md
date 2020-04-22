@@ -175,5 +175,5 @@ Once this program is compiled, you can start it from the command line with
 
       $ scala Hello
 
-###Task
+## Exercise
 Complete the expression for `y` in the `Baz` object for it  to represent the sum of `x` fields from the objects `Foo` and `Bar`.

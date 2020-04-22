@@ -35,4 +35,7 @@ A class can extend another class, whereas a case class can not extend
 another case class (because it would not be possible to correctly
 implement their equality).
 
+## Exercise
 
+- Complete the creation of two instances of the `BankAccount`.
+- Complete the creation of two instances of a c3 `Note`.

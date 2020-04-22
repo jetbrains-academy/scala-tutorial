@@ -31,3 +31,7 @@ expressions.
 <br/>
 Fill the following blank with values whose type is
 different from `Int` and see the result.
+
+## Exercise 
+
+Complete the range expression with an appropriate value.

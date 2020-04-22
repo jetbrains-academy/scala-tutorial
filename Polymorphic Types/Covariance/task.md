@@ -218,3 +218,7 @@ This passes variance checks, because:
 
  - covariant type parameters may appear in lower bounds of method type parameters
  - contravariant type parameters may appear in upper bounds of method
+
+## Exercise
+
+Complete  the class definition with covariance and animal as a parameter.

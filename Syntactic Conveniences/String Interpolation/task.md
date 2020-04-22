@@ -14,3 +14,6 @@ dynamic values in it with `$`.
 If you want to splice a complex expression (more than just an identifier),
 surround it with braces.
 
+## Exercise
+
+Complete the `greetLouder` method to say Hello, Scala in the upper case.

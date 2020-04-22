@@ -31,3 +31,8 @@ And the case class definition of `Note`:
       case class Note(name: String, duration: String, octave: Int)
 
 Let’s create some instances of `BankAccount` and `Note` and manipulate them.
+
+## Exercise
+
+- Deposit 100 to the account.
+- Create a c3 `Note` instance.

@@ -33,3 +33,7 @@ Using a lazy value for `tail`, `Stream.cons` can be implemented more efficiently
         lazy val tail = tl
         …
       }
+
+## Exercise
+
+Complete the `y` variable declaration for it to be lazy.

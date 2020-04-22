@@ -44,8 +44,7 @@ So `A` could be one of `Reptile`, `Animal`, `AnyRef`, or `Any`.
 
 Finally, it is also possible to mix a lower bound with an upper bound.
 
-For instance,
 
-      A >: Zebra <: Animal
+## Exercise
 
-would restrict `A` any type on the interval between `Zebra` and `Animal`.
+Complete the type bounds in `selection` parameters to restrict `A` to any type on the interval between `Zebra` and `Animal`.

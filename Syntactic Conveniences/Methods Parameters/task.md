@@ -54,3 +54,9 @@ You can do that by adding a `: _*` type ascription to your list:
 
 In the same way as you can give meaningful names to expressions,
 you can give meaningful names to *type expressions*.
+
+
+## Exercise
+- Complete the step default parameter in the `Range` definition for it to be equal to 1.
+- Complete the `average` definition for it to take a various range of numbers.
+- Complete the `Result` definition for its Right to be a tuple of integer numbers.

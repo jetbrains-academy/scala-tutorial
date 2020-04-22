@@ -119,3 +119,6 @@ Can we implement one concept in terms of the other?
 
  - Objects in terms of higher-order functions?
  - Higher-order functions in terms of objects?
+
+## Exercise
+Complete the `nonEmptyExample` for it to return a new `NonEmpty` containing 7 and two `Empty` objects.

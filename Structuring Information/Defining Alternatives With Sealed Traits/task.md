@@ -90,3 +90,7 @@ we don’t handle all the cases in `nonExhaustiveDuration`.
 It is worth noting that, since the purpose of case classes is to
 aggregate values, comparing case class instances compare their values.
 
+## Exercise
+
+Complete the Rest class declaration for it to extend Symbol. 
+

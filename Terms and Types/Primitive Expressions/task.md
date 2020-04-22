@@ -68,4 +68,6 @@
     3 * 3
     9
  
-
+ ## Exercise
+ 
+ Complete the expression to return "Hello, Scala!"

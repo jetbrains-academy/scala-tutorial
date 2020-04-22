@@ -38,3 +38,7 @@ constructor.
 
 Then, you can retrieve the information carried by each *member* (`name`,
 `duration` and `octave`) by using the dot notation.
+
+## Exercise
+
+Complete the setup method for the C3 Note.

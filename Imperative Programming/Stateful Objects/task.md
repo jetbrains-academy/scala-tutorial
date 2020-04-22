@@ -228,3 +228,7 @@ The substitution model ceases to be valid when we add the assignment.
 
 It is possible to adapt the substitution model by introducing a *store*,
 but this becomes considerably more complicated.
+
+
+## Exercise
+Complete the `deposit` definition to return the sum of `balance` and `amount` in case of the positive one.

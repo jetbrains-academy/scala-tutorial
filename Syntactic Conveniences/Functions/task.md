@@ -122,7 +122,7 @@ You can write:
 You can read it as “for every value ‘x’ in ‘xs’, and then for
 every value ‘y’ in ‘ys’, return ‘(x, y)’”.
 
-## Putting Things Together
+## Exercise
 
 Complete the function, so it becomes an equivalent of the following de-sugared code:
 
@@ -133,3 +133,5 @@ Complete the function, so it becomes an equivalent of the following de-sugared c
           (x, y)
         }
       }
+
+
