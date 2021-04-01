@@ -16,6 +16,6 @@ If you're already familiar with the interface, you can skip this lesson.
   When you open a course, you will see the main tool windows used for navigation: 
   **Project View**, **Editor**, and **Task Description**:
 
-  ![](edu_course_overview.png)
+  <img src="edu_course_overview.png" width="75%"/>
   
 Click the "Next" button to navigate to the next task.
