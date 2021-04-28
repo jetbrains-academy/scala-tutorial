@@ -2,6 +2,10 @@ title: Scala Tutorial
 language: English
 summary: This course contains excercises for the <a href="https://www.coursera.org/specializations/scala">Scala
   MOOC</a>("Functional Programming Principles in Scala").
+vendor:
+  name: JetBrains
+  email: support@jetbrains.com
+  url: https://www.jetbrains.com/
 programming_language: Scala
 environment: sbt
 content:
