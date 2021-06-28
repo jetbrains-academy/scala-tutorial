@@ -25,15 +25,15 @@
 
   - The number “1”:
 
-    1
+    `1`
  
   - The boolean value "true":
 
-    true
+    `true`
  
   - The text "Hello, Scala!":
 
-    "Hello, Scala!"
+    `"Hello, Scala!"`
  
  (Note the usage of double quotes, `"`).
 
@@ -44,11 +44,11 @@
 
   - How many is one plus two?
 
-    1 + 2
+    `1 + 2`
  
   - What is the result of the concatenation of the texts “Hello, ” and “Scala!”?
 
-    "Hello, " ++ "Scala!"
+    `"Hello, " ++ "Scala!"`
  
  ## Evaluation 
 
