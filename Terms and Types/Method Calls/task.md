@@ -26,7 +26,7 @@ upper case.
 
 #### Exercise
 
-Complete the methods invocations for the described methods.
+Complete the invocations for the described methods.
 
 <div class="hint">The <code>upperCaseMethod()</code> should return "HELLO, SCALA!"</div>
 <div class="hint">The <code>absMethod()</code> should return 42.</div>
