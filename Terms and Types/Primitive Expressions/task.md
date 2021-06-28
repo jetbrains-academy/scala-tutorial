@@ -70,4 +70,5 @@
  
  ## Exercise
  
- Complete the expression to return "Hello, Scala!"
+Complete the expression in `sayHello()` to return "Hello, Scala!".
+Complete the expression in `sumTheNumbers()` to return `4`.
