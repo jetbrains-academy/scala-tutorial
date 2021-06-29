@@ -17,11 +17,11 @@ intermediate expressions:
 Besides making the last expression more readable it also allows us to
 not repeat the actual value of the radius.
 
-## Evaluation
+### Evaluation
 
 A name is evaluated by replacing it with the right hand side of its definition
 
-### Example
+#### Example
 
 Here are the evaluation steps of the above expression:
 
@@ -32,9 +32,9 @@ Here are the evaluation steps of the above expression:
     31.4159 * 10
     314.159
 
-## Methods
+### Methods
 
 Definitions can have parameters. For instance, consider the program in the code editor.
 
-## Exercise
+### Exercise
 Let’s define a method that computes the area of a disc, given its radius (`x`).
