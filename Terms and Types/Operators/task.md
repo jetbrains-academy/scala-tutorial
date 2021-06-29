@@ -13,7 +13,7 @@ The infix syntax can also be used with regular methods:
 
 Any method with a parameter can be used like an infix operator.
 
-## Values and Types 
+### Values and Types 
 
 Expressions have a *value* and a *type*. The evaluation model
 defines how to get a value out of an expression. Types classify values.
@@ -23,7 +23,7 @@ Both `0` and `1` are numbers, their type is `Int`.
 <br/><br/>
 `"foo"` and `"bar"` are text, their type is `String`.
 
-## Static Typing 
+### Static Typing 
 
 The Scala compiler statically checks that you don’t combine incompatible
 expressions.
@@ -32,6 +32,6 @@ expressions.
 Try filling the blank in the code editor with values whose type is
 different from `Int` and see the result.
 
-## Exercise 
+### Exercise 
 
 Complete the range expression with an appropriate value.
