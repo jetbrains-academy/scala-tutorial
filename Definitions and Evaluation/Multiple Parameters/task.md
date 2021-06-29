@@ -30,7 +30,7 @@ For instance, `y` above refers to `4`, not `square(2)`.
 Applications of parametrized functions are evaluated in a similar way as
 operators:
 
- 1. Evaluate all function arguments, from left to right
+ 1. Evaluate all function arguments, from left to right.
  2. Replace the function application by the function's right-hand side, and, at the same time
  3. Replace the formal parameters of the function by the actual arguments.
 

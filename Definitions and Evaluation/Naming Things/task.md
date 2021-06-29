@@ -34,7 +34,7 @@ Here are the evaluation steps of the above expression:
 
 ## Methods
 
-Definitions can have parameters. 
+Definitions can have parameters. For instance, consider the program in the code editor.
 
-## Excercise
-Let’s define a method that computes the area of a disc, given its radius.
+## Exercise
+Let’s define a method that computes the area of a disc, given its radius (`x`).
