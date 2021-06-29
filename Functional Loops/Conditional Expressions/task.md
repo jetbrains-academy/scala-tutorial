@@ -12,7 +12,7 @@ Example:
 ~~~
 `x >= 0` is a *predicate*, of type `Boolean`.
 
-## Boolean Expressions 
+### Boolean Expressions 
 
 Boolean expressions `b` can be composed of
 
@@ -24,7 +24,7 @@ Boolean expressions `b` can be composed of
 and of the usual comparison operations:
       e <= e, e >= e, e < e, e > e, e == e, e != e
 
-## Rewrite rules for Booleans
+### Rewrite rules for Booleans
 
 Here are reduction rules for Boolean expressions (`e` is an arbitrary expression):
 
@@ -39,7 +39,7 @@ Note that `&&` and `||` do not always need their right operand to be evaluated.
 
 We say these expressions use "short-circuit evaluation".
 
-## Summary
+### Summary
 
 You have seen simple elements of functional programing in Scala.
 
@@ -53,6 +53,6 @@ call-by-value evaluation strategies.
 You have learned a way to reason about program execution: reduce expressions using
 the substitution model.
 
-## Exercise
+### Exercise
 
 Complete the following method definition that computes the factorial of a number.
