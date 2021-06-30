@@ -49,5 +49,6 @@ putting the auxiliary functions inside `sqrt`.
 
 ### Exercise: Scope Rules 
 
-What is the value of `result` in the following program?
+Complete the code in the code editor.
+What is the value of `result` in the program?
 
