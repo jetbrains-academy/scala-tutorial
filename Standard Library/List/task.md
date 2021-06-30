@@ -22,7 +22,7 @@ The type of a list with elements of type `T` is written `List[T]`:
       val diag3: List[List[Int]] = List(List(1, 0, 0), List(0, 1, 0), List(0, 0, 1))
       val empty: List[Nothing]   = List()
 
-## Constructors of Lists 
+### Constructors of Lists 
 
 Actually, all lists are constructed from:
 
@@ -36,7 +36,7 @@ For example:
       val nums  = 1 :: (2 :: (3 :: (4 :: Nil)))
       val empty = Nil
 
-### Right Associativity 
+#### Right Associativity 
 
 Convention: Operators ending in “`:`” associate to the right.
 
@@ -53,7 +53,7 @@ So the expression above is equivalent to:
 
       val nums = Nil.::(4).::(3).::(2).::(1)
 
-## Manipulating Lists 
+### Manipulating Lists 
  
 It is possible to decompose lists with pattern matching:
 
@@ -74,7 +74,7 @@ It is possible to decompose lists with pattern matching:
         case List(2 :: xs) => …
       }
 ```
-## Exercise: Sorting Lists
+### Exercise: Sorting Lists
 
 Suppose we want to sort a list of numbers in ascending order:
 
