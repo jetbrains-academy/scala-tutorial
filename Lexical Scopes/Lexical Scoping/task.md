@@ -2,11 +2,12 @@
 ## Lexical Scoping
 
 Definitions of outer blocks are visible inside a block unless they are shadowed.
+Shadowed definitions are ones which are redefined in a lower scope.
 
 Therefore, we can simplify `sqrt` by eliminating redundant occurrences of the `x` parameter, which means
-everywhere the same thing:
+* the same thing everywhere:
 
-## The `sqrt` Function, Take 3
+### The `sqrt` Function, Take 3
 
       def sqrt(x: Double) = {
         def sqrtIter(guess: Double): Double =
@@ -22,7 +23,7 @@ everywhere the same thing:
         sqrtIter(1.0)
       }
 
-## Semicolons 
+### Semicolons 
 
 In Scala, semicolons at the end of lines are in most cases optional.
 
@@ -32,12 +33,12 @@ You could write:
 
 but most people would omit the semicolon.
 
-On the other hand, if there are more than one statements on a line, they need to be
+On the other hand, if there is more than one statement on a line, they need to be
 separated by semicolons:
 
       val y = x + 1; y * y
 
-## Semicolons and infix operators
+### Semicolons and infix operators
 
 One issue with Scala's semicolon convention is how to write expressions that span
 several lines. For instance:
@@ -72,7 +73,7 @@ compiler that the expression is not yet finished:
 ```
       someOtherExpression
 ```
-## Top-Level Definitions
+### Top-Level Definitions
 
 In real Scala programs, `def` and `val` definitions must be written
 within a top-level *object definition*, in .scala file:
@@ -90,7 +91,7 @@ can refer to its *members* using the usual dot notation:
 The definition of `MyExecutableProgram` is *top-level* because it
 is not nested within another definition.
 
-## Packages and Imports 
+### Packages and Imports 
 
 Top-level definitions can be organized in *packages*.
 To place a class or object inside a package, use a package clause
@@ -133,7 +134,7 @@ Finally, you can import names to avoid repeating their fully qualified form:
         Bar.someMethod
       }
 
-## Automatic Imports 
+### Automatic Imports 
 
 Some entities are automatically imported in any Scala program.
 
@@ -158,7 +159,7 @@ which you have seen so far:
 ```
       String                         java.lang.String
 ```
-## Writing Executable Programs 
+### Writing Executable Programs 
  
 Let's consider creating standalone
 applications in Scala.
@@ -175,5 +176,5 @@ Once this program is compiled, you can start it from the command line with
 
       $ scala Hello
 
-## Exercise
+### Exercise
 Complete the expression for `y` in the `Baz` object for it  to represent the sum of `x` fields from the objects `Foo` and `Bar`.
