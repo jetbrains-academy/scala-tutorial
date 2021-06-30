@@ -52,5 +52,5 @@ with a case class:
 
 Consider the following algebraic data type that models note durations.
 Complete the implementation of the function `fractionOfWhole`, which
-takes as parameter a duration and returns the corresponding fraction
+takes a duration as a parameter and returns the corresponding fraction
 of the `Whole` duration.
