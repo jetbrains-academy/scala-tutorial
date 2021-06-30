@@ -55,7 +55,7 @@ but we always come back to this shape of the call of `gcd`. If we look at
 one more element to our expressions. Our expressions becomes bigger and
 bigger until we end when we finally reduce it to the final value.
 
-## Tail Recursion
+### Tail Recursion
 
 That difference in the rewriting rules actually translates directly to a
 difference in the actual execution on a computer. In fact, it turns out
@@ -88,7 +88,7 @@ recursion is that, if the last action of a function consists of calling
 another function, maybe the same, maybe some other function, the stack
 frame could be reused for both functions. Such calls are called *tail calls*.
 
-## Tail Recursion in Scala 
+### Tail Recursion in Scala 
 
 In Scala, only directly recursive calls to the current function are optimized.
 
@@ -100,6 +100,6 @@ One can require that a function is tail-recursive using a `@tailrec` annotation:
 If the annotation is given, and the implementation of `gcd` were not tail
 recursive, an error would be issued.
 
-## Exercise 
+### Exercise 
 
 Complete the following definition of a tail-recursive version of `factorial`.
