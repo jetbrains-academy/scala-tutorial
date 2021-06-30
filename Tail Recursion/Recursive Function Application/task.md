@@ -21,7 +21,10 @@ Here's an implementation of `gcd` using Euclid's algorithm.
       gcd(21, 14)
       if (14 == 0) 21 else gcd(14, 21 % 14)
       if (false) 21 else gcd(14, 21 % 14)
+      gcd(14, 21 % 14)
       gcd(14, 7)
+      if (7 == 0) 14 else gcd(7, 14 % 7)
+      if (false) 14 else gcd (7, 14 % 7)
       gcd(7, 14 % 7)
       gcd(7, 0)
       if (0 == 0) 7 else gcd(0, 7 % 0)
@@ -102,4 +105,4 @@ recursive, an error would be issued.
 
 ### Exercise 
 
-Complete the following definition of a tail-recursive version of `factorial`.
+Complete the definition of a tail-recursive version of `factorial`.
