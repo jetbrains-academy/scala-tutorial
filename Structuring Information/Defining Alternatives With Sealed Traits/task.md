@@ -88,9 +88,12 @@ we don’t handle all the cases in `nonExhaustiveDuration`.
 ### Equals
 
 It is worth noting that, since the purpose of case classes is to
-aggregate values, comparing case class instances compare their values.
+aggregate values, comparing case class instances compares their values.
 
 ### Exercise
 
-Complete the Rest class declaration for it to extend Symbol. 
+Complete the `Rest` class declaration for it to extend Symbol. 
+Complete the `caseClassEquals` and `symbolDuration` method definitions.
+
+<div class="hint">In the method <code>caseClassEquals</code>, check if case class instances are equal.</div>
 
