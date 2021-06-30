@@ -12,8 +12,7 @@ A list having `x1`, …, `xn` as elements is written `List(x1, …, xn)`:
 
  - Lists are immutable --- the elements of a list cannot be changed,
  - Lists are recursive (as you will see in the next subsection),
- - Lists are *homogeneous*: the elements of a list must all have the
-   same type.
+ - Lists are *homogeneous*: a list is intended to be composed of elements that all have the same type.
 
 The type of a list with elements of type `T` is written `List[T]`:
 
@@ -28,7 +27,7 @@ Actually, all lists are constructed from:
 
  - the empty list `Nil`, and
  - the construction operation `::` (pronounced *cons*): `x :: xs` gives a new list
-   with the first element `x`, followed by the elements of `xs` (which is a list itself).
+   with the first element `x`, called the `head`, followed by the `tail` `xs`, which is itself a list of elements.
 
 For example:
 
@@ -90,4 +89,4 @@ This idea describes *Insertion Sort*:
         case y :: ys => insert(y, insertionSort(ys))
       }
 
-Complete the definition insertion sort by filling in the blanks in the definition below.
+Complete the definition by filling in the blanks.
