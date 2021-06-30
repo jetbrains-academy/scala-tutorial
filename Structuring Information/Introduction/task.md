@@ -9,7 +9,7 @@ We will base our examples on the following domain, a *music sheet*:
 
 <img src="./music_sheet.png" width="500" />
 
-## Aggregating Information With Case Classes
+### Aggregating Information With Case Classes
 
 First, let’s focus on *notes*. Suppose that, in our program, we are
 interested in the following properties of notes: their
@@ -39,6 +39,6 @@ constructor.
 Then, you can retrieve the information carried by each *member* (`name`,
 `duration` and `octave`) by using the dot notation.
 
-## Exercise
+### Exercise
 
 Complete the setup method for the C3 Note.

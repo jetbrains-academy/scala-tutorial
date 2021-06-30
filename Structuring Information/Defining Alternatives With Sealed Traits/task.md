@@ -19,7 +19,7 @@ constructor for it. Constructors are defined by alternatives that
     val symbol1: Symbol = Note("C", "Quarter", 3)
     val symbol2: Symbol = Rest("Whole")
 
-## Pattern Matching
+### Pattern Matching
 
 Since the `Symbol` type has no members, we can not do anything
 useful when we manipulate one. We need a way to distinguish between
@@ -85,12 +85,12 @@ def nonExhaustiveDuration(symbol: Symbol): String =
 If we try to run the above code to see how the compiler informs us that
 we don’t handle all the cases in `nonExhaustiveDuration`.
 
-## Equals
+### Equals
 
 It is worth noting that, since the purpose of case classes is to
 aggregate values, comparing case class instances compare their values.
 
-## Exercise
+### Exercise
 
 Complete the Rest class declaration for it to extend Symbol. 
 

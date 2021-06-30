@@ -23,7 +23,7 @@ aggregate no information:
       …
       case object G extends NoteName
 
-## Algebraic Data Types
+### Algebraic Data Types
 
 Data types defined with sealed trait and case classes are called
 *algebraic data types*. An algebraic data type definition can
@@ -48,7 +48,7 @@ with a case class:
 
       case class Note(name: String, duration: String, octave: Int) extends Symbol
 
-## Exercise
+### Exercise
 
 Consider the following algebraic data type that models note durations.
 Complete the implementation of the function `fractionOfWhole`, which
