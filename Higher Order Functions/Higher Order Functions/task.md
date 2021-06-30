@@ -11,7 +11,7 @@ This provides a flexible way to compose programs.
 Functions that take other functions as parameters or that return functions
 as results are called *higher order functions*.
 
-##  Motivation 
+###  Motivation 
 
 Consider the following programs.
 
@@ -37,7 +37,7 @@ and `b`:
 Note how similar these methods are.
 Can we factor out the common pattern?
 
-##  Summing with Higher-Order Functions 
+###  Summing with Higher-Order Functions 
 
 Let's define:
 
@@ -52,7 +52,7 @@ We can then write:
       def sumCubes(a: Int, b: Int)      = sum(cube, a, b)
       def sumFactorials(a: Int, b: Int) = sum(factorial, a, b)
 
-##  Function Types 
+###  Function Types 
 
 The type `A => B` is the type of a *function* that
 takes an argument of type `A` and returns a result of
@@ -60,7 +60,7 @@ type `B`.
 
 So, `Int => Int` is the type of functions that map integers to integers.
 
-##  Anonymous Functions 
+###  Anonymous Functions 
 
 Passing functions as parameters leads to the creation of many small functions.
 
@@ -79,7 +79,7 @@ literals, which let us write a function without giving it a name.
 
 These are called *anonymous functions*.
 
-## Anonymous Function Syntax
+### Anonymous Function Syntax
 
 Example of a function that raises its argument to a cube:
 
@@ -95,7 +95,7 @@ If there are several parameters, they are separated by commas:
 
       (x: Int, y: Int) => x + y
 
-## Anonymous Functions are Syntactic Sugar
+### Anonymous Functions are Syntactic Sugar
 
 An anonymous function `(x1: T1, …, xn: Tn) => e`
 can always be expressed using `def` as follows:
@@ -106,14 +106,14 @@ where `f` is an arbitrary, fresh name (that's not yet used in the program).
 
 One can therefore say that anonymous functions are *syntactic sugar*.
 
-## Summation with Anonymous Functions 
+### Summation with Anonymous Functions 
 
 Using anonymous functions, we can write sums in a shorter way:
 
       def sumInts(a: Int, b: Int)  = sum(x => x, a, b)
       def sumCubes(a: Int, b: Int) = sum(x => x * x * x, a, b)
 
-##  Exercise 
+###  Exercise 
 
 The `sum` function uses linear recursion. Complete the following tail-recursive
 version.
