@@ -9,7 +9,7 @@ We will define in this section a method
 The classical way to achieve this is by successive approximations using
 Newton's method.
 
-### Method
+## Method
 
 To compute `sqrt(x)`:
 
@@ -24,7 +24,7 @@ Example:
     1.4167              2 / 1.4167 = 1.4118   1.4142
     1.4142              ...                   ...
 
-### Implementation in Scala
+## Implementation in Scala
 
 First, we define a method which computes one iteration step:
 
@@ -49,6 +49,3 @@ Second, we define a method `improve` to improve an estimate and a test to check 
 Third, we define the `sqrt` function:
 
       def sqrt(x: Double) = sqrtIter(1.0, x)
-
-### Exercise 
-Complete the definitions of the methods `sqrtIter` and `improve` in the code editor. 
