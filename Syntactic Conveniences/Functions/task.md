@@ -20,7 +20,7 @@ So functions are objects with `apply` methods.
 
 There are also traits `Function2`, `Function3`, ... for functions which take more parameters (currently up to 22).
 
-## Expansion of Function Values
+### Expansion of Function Values
 
 An anonymous function such as
 
@@ -39,7 +39,7 @@ or, shorter, using *anonymous class syntax*:
         def apply(x: Int) = x * x
       }
 
-## Expansion of Function Calls
+### Expansion of Function Calls
 
 A function call, such as `f(a, b)`, where `f` is a value of some class
 type, is expanded to:
@@ -58,7 +58,7 @@ would be:
       }
       f.apply(7)
 
-## Functions and Methods
+### Functions and Methods
 
 Note that a method such as
 
@@ -71,7 +71,7 @@ converted automatically to the function value
 
       (x: Int) => f(x)
 
-## `for` expressions 
+### `for` expressions 
 
 You probably noticed that several data types of the standard library
 have methods named `map`, `flatMap` and `filter`.
@@ -79,7 +79,7 @@ have methods named `map`, `flatMap` and `filter`.
 These methods are so common in practice that Scala supports a dedicated
 syntax: *for expressions*.
 
-## `map`
+### `map`
 
 Thus, instead of writing the following:
 
@@ -91,7 +91,7 @@ You can write:
 
 You can read it as “for every value, that I name ‘x’, in ‘xs’, return ‘x + 1’”.
 
-## `filter`
+### `filter`
 
 Also, instead of writing the following:
 
@@ -109,7 +109,7 @@ with the previous one:
       // Equivalent to the following:
       xs.filter(x => x % 2 == 0).map(x => x + 1)
 
-## `flatMap`
+### `flatMap`
 
 Finally, instead of writing the following:
 
@@ -122,7 +122,7 @@ You can write:
 You can read it as “for every value ‘x’ in ‘xs’, and then for
 every value ‘y’ in ‘ys’, return ‘(x, y)’”.
 
-## Exercise
+### Exercise
 
 Complete the function, so it becomes an equivalent of the following de-sugared code:
 
