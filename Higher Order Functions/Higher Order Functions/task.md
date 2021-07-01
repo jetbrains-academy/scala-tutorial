@@ -52,7 +52,7 @@ We can then write:
       def sumCubes(a: Int, b: Int)      = sum(cube, a, b)
       def sumFactorials(a: Int, b: Int) = sum(factorial, a, b)
 
-###  Function Types 
+##  Function Types 
 
 The type `A => B` is the type of a *function* that
 takes an argument of type `A` and returns a result of
@@ -119,7 +119,7 @@ Using anonymous functions, we can write sums in a shorter way:
       def sumInts(a: Int, b: Int)  = sum(x => x, a, b)
       def sumCubes(a: Int, b: Int) = sum(x => x * x * x, a, b)
 
-###  Exercise 
+##  Exercise 
 
 The `sum` function uses linear recursion. Complete the tail-recursive
 version.
