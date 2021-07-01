@@ -121,4 +121,4 @@ Can we implement one concept in terms of the other?
  - Higher-order functions in terms of objects?
 
 ## Exercise
-Complete the `nonEmptyExample` for it to return a new `NonEmpty` containing 7 and two `Empty` objects.
+Complete the `nonEmptyExample` for it to return a new `NonEmpty` containing a `7` and two `Empty` objects.
