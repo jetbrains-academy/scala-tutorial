@@ -38,7 +38,7 @@ The type parameter `A` that can range only over *supertypes* of `Reptile`.
 
 So `A` could be one of `Reptile`, `Animal`, `AnyRef`, or `Any`.
 
-(We will see later on in this section where lower bounds are useful).
+(We will see later on where lower bounds are useful).
 
 ### Mixed Bounds 
 
