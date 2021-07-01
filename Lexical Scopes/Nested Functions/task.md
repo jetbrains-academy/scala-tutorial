@@ -11,7 +11,7 @@ Normally we would not like users to access these functions directly.
 We can achieve this and at the same time avoid "name-space pollution" by
 putting the auxiliary functions inside `sqrt`.
 
-##  The `sqrt` Function, Take 2 
+###  The `sqrt` Function, Take 2 
 
     def sqrt(x: Double) = {
         def sqrtIter(guess: Double, x: Double): Double =
@@ -41,7 +41,7 @@ putting the auxiliary functions inside `sqrt`.
  This return expression can be preceded by auxiliary definitions.\
  Blocks are themselves expressions; a block may appear everywhere an expression can.
 
-## Blocks and Visibility 
+### Blocks and Visibility 
 
  The definitions inside a block are only visible from within the block.\
  The definitions inside a block *shadow* definitions of the same names
