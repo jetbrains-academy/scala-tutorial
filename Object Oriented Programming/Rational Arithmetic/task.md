@@ -79,7 +79,7 @@ We can now define the arithmetic functions that implement the standard rules.
         )
     
       def makeString(r: Rational) =
-        r.numer + "/" + r.denom
+        s"${r.numer}/${r.denom}"
 
 And then:
 
@@ -105,7 +105,7 @@ Here's a possible implementation:
           new Rational(numer * r.denom + r.numer * denom, denom * r.denom)
         def mul(r: Rational) = ...
         ...
-        override def toString = numer + "/" + denom
+        override def toString = s"$numer/$denom"
       }
 
 Note that the modifier `override` declares that `toString`
@@ -242,7 +242,7 @@ The primary constructor:
 
  - takes the parameters of the class
  - and executes all statements in the class body
-   (such as the `require` a couple of slides back).
+   (such as the `require` a couple of lines back).
 
 ### Auxiliary Constructors
 
