@@ -48,7 +48,7 @@ with a case class:
 
       case class Note(name: String, duration: String, octave: Int) extends Symbol
 
-### Exercise
+## Exercise
 
 Consider the following algebraic data type that models note durations.
 Complete the implementation of the function `fractionOfWhole`, which
