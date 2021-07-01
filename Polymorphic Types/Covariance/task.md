@@ -221,4 +221,4 @@ This passes variance checks, because:
 
 ## Exercise
 
-Complete  the class definition with covariance and animal as a parameter.
+Complete the class definition with covariance and `animal` as a parameter.
