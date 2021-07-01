@@ -24,7 +24,7 @@ The `abs` method returns the absolute value of a
 number, and the `toUpperCase` method returns the target `String` in
 upper case.
 
-### Exercise
+#### Exercise
 
 Complete the invocations for the described methods.
 

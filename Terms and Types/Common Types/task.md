@@ -8,7 +8,7 @@
 
 Note that type names always begin with an upper case letter.
 
-### Exercise
+## Exercise
 
 Here are some more methods of standard types. Can you guess what they do?
 Complete their invocations.
