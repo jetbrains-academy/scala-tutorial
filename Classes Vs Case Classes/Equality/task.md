@@ -9,7 +9,7 @@ will remain private.
 ## Equality
 
 
-In the example, the same definitions of bank accounts lead to different
+In the example in the code editor, the same definitions of bank accounts lead to different
 values, whereas the same definitions of notes lead to equal values.
 
 As we have seen in the previous sections, stateful classes introduce a notion of *identity*
