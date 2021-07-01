@@ -5,7 +5,7 @@ Separate several parameters with commas:
 
     def sumOfSquares(x: Double, y: Double) = square(x) + square(y)
 
-### Parameters and Return Types 
+## Parameters and Return Types 
 
 Function parameters come with their type, which is given after a colon
 
@@ -13,7 +13,7 @@ Function parameters come with their type, which is given after a colon
 
 If a return type is given, it follows the parameter list.
 
-### Val vs Def
+## Val vs Def
 
 The right hand side of a `def` definition is evaluated on each use.
 
@@ -25,7 +25,7 @@ itself. Afterwards, the name refers to the value.
 
 For instance, `y` above refers to `4`, not `square(2)`.
 
-### Evaluation of Function Applications
+## Evaluation of Function Applications
 
 Applications of parametrized functions are evaluated in a similar way as
 operators:
@@ -34,7 +34,7 @@ operators:
  2. Replace the function application by the function's right-hand side, and, at the same time
  3. Replace the formal parameters of the function by the actual arguments.
 
-#### Example
+## Example
 
     sumOfSquares(3, 2+2)
     sumOfSquares(3, 4)
@@ -45,7 +45,7 @@ operators:
     9 + 16
     25
 
-### The substitution model
+## The substitution model
 
 This scheme of expression evaluation is called the *substitution model*.
 
@@ -57,7 +57,7 @@ It can be applied to all expressions, as long as they have no side effects.
 The substitution model is formalized in the λ-calculus, which gives
 a foundation for functional programming.
 
-### Termination 
+## Termination 
 
 Does every expression reduce to a value (in a finite number of steps)?
 
@@ -67,7 +67,7 @@ No. Here is a counter-example:
 
     loop
 
-### Value Definitions and Termination
+## Value Definitions and Termination
 
 The difference between `val` and `def` becomes apparent when the right
 hand side does not terminate. Given
@@ -84,7 +84,7 @@ is OK, but a value
 
 will lead to an infinite loop.
 
-### Changing the evaluation strategy
+## Changing the evaluation strategy
 
 The interpreter reduces function arguments to values before rewriting the
 function application.
@@ -102,7 +102,7 @@ For instance:
     9 + 4 * 4
     25
 
-### Call-by-name and call-by-value 
+## Call-by-name and call-by-value 
 
 The first evaluation strategy is known as *call-by-value*,
 the second is known as *call-by-name*.
@@ -121,7 +121,7 @@ corresponding parameter is unused in the evaluation of the function body.
 
 Scala normally uses call-by-value.
 
-### Exercise
+## Exercise
 
 Complete the following definition of the `triangleArea` function,
 which takes a triangle base and height as parameters and returns
