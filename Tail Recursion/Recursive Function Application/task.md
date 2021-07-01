@@ -103,6 +103,6 @@ One can require that a function is tail-recursive using a `@tailrec` annotation:
 If the annotation is given, and the implementation of `gcd` were not tail
 recursive, an error would be issued.
 
-### Exercise 
+## Exercise 
 
 Complete the definition of a tail-recursive version of `factorial`.
