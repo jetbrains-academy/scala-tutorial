@@ -18,7 +18,7 @@ A trait is declared like an abstract class, just with `trait` instead of
       }
 
 Classes, objects and traits can inherit from at most one class but
-arbitrary many traits:
+arbitrarily many traits:
 
       class Square extends Shape with Planar with Movable …
 
@@ -68,7 +68,7 @@ incompatible with subtypes of `AnyVal`.
 
 ## Exercise 
 
-The following `Reducer` abstract class defines how to
+The `Reducer` abstract class defines how to
 reduce a list of values into a single value by starting
 with an initial value and combining it with each element
 of the list.
