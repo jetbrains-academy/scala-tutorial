@@ -21,7 +21,7 @@ its body is evaluated.
 
 In Scala there is a kind of `for` loop:
 
-      for (i <- 1 until 3) { System.out.print(i + " ") }
+      for (i <- 1 until 3) { System.out.print(i.toString + " ") }
 
 This displays `1 2`.
 
@@ -41,6 +41,6 @@ translates to:
 
       (1 until 3) foreach (i => "abc" foreach (j => println(s"$i $j")))
 
-### Exercise 
+## Exercise 
 
-Complete the following imperative implementation of `factorial`.
+Complete the imperative implementation of `factorial` in the code editor.
