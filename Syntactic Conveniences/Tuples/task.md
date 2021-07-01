@@ -25,6 +25,6 @@ You can retrieve the elements of a tuple by using a *tuple pattern*.
 Alternatively, you can retrieve the 1st element with the `_1` member,
 the 2nd element with the `_2` member, etc.
 
-### Exercise
+## Exercise
 
 Complete the `pair` method definition to return the tuple including the parameters passed.
