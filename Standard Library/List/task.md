@@ -73,7 +73,7 @@ It is possible to decompose lists with pattern matching:
         case List(2 :: xs) => …
       }
 ```
-### Exercise: Sorting Lists
+## Exercise: Sorting Lists
 
 Suppose we want to sort a list of numbers in ascending order:
 
