@@ -145,12 +145,7 @@ For instance, here's `filter`:
 
 ## Exercise
 
-Complete the call to the `stream.cons`, passing the `streamRange` used on the rest of the Stream.
-
-Consider the following modification of `streamRange`. When you write
-`streamRange(1, 10).take(3).toList` what is the value of `rec`?
-
-Consider the following modification of `llRange`. When you write
+Consider the modification of `llRange` given in the code editor. When you write
 `llRange(1, 10).take(3).toList` what is the value of `rec`?
 
 Be careful, head is evaluating too!
