@@ -19,7 +19,7 @@ But from a standpoint of performance, the first version is pretty bad; it constr
 the first two elements of that list.
 
 Reducing the upper bound would speed things up, but risks that we miss the
-second prime number all together.
+second prime number altogether.
 
 ## Delayed Evaluation
 
@@ -147,3 +147,8 @@ Complete the call to the `stream.cons`, passing the `streamRange` used on the re
 
 Consider the following modification of `streamRange`. When you write
 `streamRange(1, 10).take(3).toList` what is the value of `rec`?
+
+Consider the following modification of `llRange`. When you write
+`llRange(1, 10).take(3).toList` what is the value of `rec`?
+
+Be careful, head is evaluating too!
