@@ -11,7 +11,7 @@ either be:
  - or a `Failure`.
 
 The key difference between `None` and `Failure`s is that the latter provide
-the reason of the failure:
+the reason for the failure:
 
       def sqrt(x: Double): Try[Double] =
         if (x < 0) Failure(new IllegalArgumentException("x must be positive"))
@@ -23,7 +23,7 @@ Like options and lists, `Try[A]` is an algebraic data type, so it can
 be decomposed using pattern matching.
 
 `Try[A]` also have `map`, `filter` and `flatMap`. They behave the same
-as with `Option[A]`, excepted that any exception that is thrown
+as with `Option[A]`, except that any exception that is thrown
 during their execution is converted into a `Failure`.
 
 ### Either
@@ -33,8 +33,8 @@ during their execution is converted into a `Failure`.
 of type `B`. It can be decomposed in two cases: `Left` or `Right`.
 
 You can use one case to represent the failure and the other to represent
-the success. One difference with `Try` is that you can choose another
-type than `Throwable` to represent the exception. Another difference
+the success. What makes it different from `Try` is that you can choose a
+type other than `Throwable` to represent the exception. Another difference
 is that exceptions that occur when transforming `Either` values are
 not converted into failures.
 
@@ -58,6 +58,6 @@ into a `Left` value if it does not satisfy a given predicate:
 However, prior to Scala 2.12, `Either` was “unbiased”. You had to explicitly
 specify which “side” (`Left` or `Right`) you wanted to `map`.
 
-### Exercise
+## Exercise
 
 Complete the ```tripleEither()``` function, so it maps the successful results with the ```triple()``` function.

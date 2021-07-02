@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 130
-    length: 19
+    length: 13
     placeholder_text: /*map the successful results with triple()*/
 - name: test/Test.scala
   visible: false

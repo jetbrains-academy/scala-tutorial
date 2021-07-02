@@ -18,7 +18,7 @@ results into a single list using `flatMap`:
         }
       xs == List(1, 2, 3, 2, 4, 6, 3, 6, 9)
 
-## Optional Values
+### Optional Values
 
 We represent an optional value of type `A` with the type `Option[A]`.
 This is useful to implement, for instance, partially defined
@@ -33,7 +33,7 @@ An `Option[A]` can either be `None` (if there is no value) or `Some[A]`
       def sqrt(x: Double): Option[Double] =
         if (x < 0) None else Some(…)
 
-## Manipulating Options
+### Manipulating Options
 
 It is possible to decompose options with pattern matching:
 
