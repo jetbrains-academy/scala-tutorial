@@ -1,7 +1,7 @@
 
 ## Lazy Evaluation
 
-The proposed `Stream` implementation suffers from a serious potential performance
+The proposed `LazyList` implementation suffers from a serious potential performance
 problem: If `tail` is called several times, the corresponding stream
 will be recomputed each time.
 
@@ -23,16 +23,6 @@ Scala uses strict evaluation by default, but allows lazy evaluation of value def
 with the `lazy val` form:
 
       lazy val x = expr
-
-## Lazy Vals and Streams
-
-Using a lazy value for `tail`, `Stream.cons` can be implemented more efficiently:
-
-      def cons[T](hd: T, tl: => Stream[T]) = new Stream[T] {
-        def head = hd
-        lazy val tail = tl
-        …
-      }
 
 ## Exercise
 
