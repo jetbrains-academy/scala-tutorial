@@ -5,12 +5,12 @@ files:
 - name: src/ComputingSquareRoot.scala
   visible: true
   placeholders:
-  - offset: 65
+  - offset: 155
     length: 5
     placeholder_text: //you can just return the guess here
-  - offset: 154
+  - offset: 244
     length: 22
-    placeholder_text: //here we need to put an expression for evaluating a better
+    placeholder_text: //here we need to place an expression for evaluating a better
       guess
 - name: test/TestSpec.scala
   visible: false

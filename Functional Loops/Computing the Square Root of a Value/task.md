@@ -49,3 +49,6 @@ Second, we define a method `improve` to improve an estimate and a test to check 
 Third, we define the `sqrt` function:
 
       def sqrt(x: Double) = sqrtIter(1.0, x)
+
+## Exercise
+Complete the definitions of the methods `sqrtIter` and `improve` in the code editor. 
