@@ -21,7 +21,10 @@ Here's an implementation of `gcd` using Euclid's algorithm.
       gcd(21, 14)
       if (14 == 0) 21 else gcd(14, 21 % 14)
       if (false) 21 else gcd(14, 21 % 14)
+      gcd(14, 21 % 14)
       gcd(14, 7)
+      if (7 == 0) 14 else gcd(7, 14 % 7)
+      if (false) 14 else gcd (7, 14 % 7)
       gcd(7, 14 % 7)
       gcd(7, 0)
       if (0 == 0) 7 else gcd(0, 7 % 0)
@@ -55,7 +58,7 @@ but we always come back to this shape of the call of `gcd`. If we look at
 one more element to our expressions. Our expressions becomes bigger and
 bigger until we end when we finally reduce it to the final value.
 
-## Tail Recursion
+### Tail Recursion
 
 That difference in the rewriting rules actually translates directly to a
 difference in the actual execution on a computer. In fact, it turns out
@@ -88,7 +91,7 @@ recursion is that, if the last action of a function consists of calling
 another function, maybe the same, maybe some other function, the stack
 frame could be reused for both functions. Such calls are called *tail calls*.
 
-## Tail Recursion in Scala 
+### Tail Recursion in Scala 
 
 In Scala, only directly recursive calls to the current function are optimized.
 
@@ -102,4 +105,4 @@ recursive, an error would be issued.
 
 ## Exercise 
 
-Complete the following definition of a tail-recursive version of `factorial`.
+Complete the definition of a tail-recursive version of `factorial`.
