@@ -5,7 +5,7 @@ Definitions of outer blocks are visible inside a block unless they are shadowed.
 Shadowed definitions are ones which are redefined in a lower scope.
 
 Therefore, we can simplify `sqrt` by eliminating redundant occurrences of the `x` parameter, which means
-* the same thing everywhere:
+the same thing everywhere:
 
 ### The `sqrt` Function, Take 3
 
