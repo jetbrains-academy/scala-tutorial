@@ -36,10 +36,10 @@ will supply it for us, by using its default value.
 ### Repeated Parameters
 
 You can define a function that can receive an arbitrary number of
-parameters (of the same type) as follows.
+parameters (of the same type).
 
 
-The `average` function takes at least one `Int` parameter and then
+The `average` function defined in the code editor takes at least one `Int` parameter and then
 an arbitrary number of other values and computes their average.
 By forcing users to supply at least one parameter, we make it impossible
 for them to compute the average of an empty list of numbers.
@@ -57,6 +57,6 @@ you can give meaningful names to *type expressions*.
 
 
 ## Exercise
-- Complete the step default parameter in the `Range` definition for it to be equal to 1.
-- Complete the `average` definition for it to take a various range of numbers.
-- Complete the `Result` definition for its Right to be a tuple of integer numbers.
+- Complete the `step` default parameter in the `Range` definition for it to be equal to 1.
+- Complete the `average` definition for it to take an arbitrary number of parameters.
+- Complete the `Result` definition for its `Right` to be a tuple of integer numbers.

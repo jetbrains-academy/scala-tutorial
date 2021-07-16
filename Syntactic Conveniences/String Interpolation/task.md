@@ -16,4 +16,4 @@ surround it with braces.
 
 ## Exercise
 
-Complete the `greetLouder` method to say Hello, Scala in the upper case.
+Complete the `greetLouder` method to say "Hello, Scala" in the upper case.
