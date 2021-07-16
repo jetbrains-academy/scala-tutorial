@@ -1,5 +1,5 @@
 
-Remember the definition of `IntSet` (in section Object Oriented Programming):
+Remember the definition of `IntSet` (in section [Object Oriented Programming](course://Object Oriented Programming)):
 
       abstract class IntSet {
         def incl(x: Int): IntSet
@@ -68,7 +68,7 @@ Some other languages keep the type parameters around at run time, these include 
 
 Polymorphism means that a function type comes "in many forms".
 
-In programming it means that
+In programming, it means that
 
  - the function can be applied to arguments of many types, or
  - the type can have instances of many types.
