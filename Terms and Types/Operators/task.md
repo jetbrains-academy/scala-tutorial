@@ -29,7 +29,7 @@ The Scala compiler statically checks that you don’t combine incompatible
 expressions.
 <br/>
 <br/>
-Fill the following blank with values whose type is
+Try filling the blank in the code editor with values whose type is
 different from `Int` and see the result.
 
 ## Exercise 

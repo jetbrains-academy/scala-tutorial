@@ -20,10 +20,13 @@ The object on which the method is applied is named the *target object*.
 
 Methods can have *parameters*. They are supplied between parentheses.
 
-In the below examples, the `abs` method returns the absolute value of a
+The `abs` method returns the absolute value of a
 number, and the `toUpperCase` method returns the target `String` in
 upper case.
 
 #### Exercise
 
-Complete the methods invocations.
+Complete the invocations for the described methods.
+
+<div class="hint">The <code>upperCaseMethod()</code> should return "HELLO, SCALA!"</div>
+<div class="hint">The <code>absMethod()</code> should return 42.</div>
