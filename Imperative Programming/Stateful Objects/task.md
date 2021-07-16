@@ -159,7 +159,7 @@ In a somewhat informal way, this property is stated as follows:
  - `x` and `y` are operationally equivalent if *no possible test* can
    distinguish between them.
 
-= Testing for Operational Equivalence =
+### Testing for Operational Equivalence 
 
 To test if `x` and `y` are the same, we must
 
@@ -181,7 +181,7 @@ To test if `x` and `y` are the same, we must
  - On the other hand, if all possible pairs of sequences `(S, S')` produce the same result,
    then `x` and `y` are the same.
 
-Based on this definition, let's see if the expressions
+Based on this definition, let's see if these expressions are different:
 
       val x = new BankAccount
       val y = new BankAccount
@@ -193,11 +193,8 @@ Let's follow the definitions by a test sequence:
       x deposit 30
       y withdraw 20                // java.lang.Error: insufficient funds
 
-Now rename all occurrences of `y` with `x` in this sequence. 
-
-
-The final results are different. We conclude that `x` and `y`
-are not the same.
+If we rename all occurrences of `y` with `x` in this sequence, the final results 
+will be different. We conclude that `x` and `y` are not the same.
 
 ## Establishing Operational Equivalence 
 
