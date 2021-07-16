@@ -89,4 +89,4 @@ This idea describes *Insertion Sort*:
         case y :: ys => insert(y, insertionSort(ys))
       }
 
-Complete the definition by filling in the blanks.
+Complete the definition of insertion sort by filling in the blanks.
