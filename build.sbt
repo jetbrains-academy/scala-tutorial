@@ -1,5 +1,6 @@
 import scala.collection.mutable.ListBuffer
 
+ThisBuild / scalaVersion := "2.13.3"
 val list = ListBuffer[ProjectReference]()
 
 val subFolders = file(".").listFiles.filter(_.isDirectory).filter(isNotIgnored).foreach { f =>
