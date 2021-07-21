@@ -3,12 +3,13 @@ We see that creating a class instance requires the keyword `new`, whereas
 this is not required for case classes.
 
 Also, we see that the case class constructor parameters are promoted to
-members, whereas this is not the case with regular classes.
+members, whereas this is not true for regular classes: the parameters
+will remain private.
 
 ## Equality
 
 
-In the example, the same definitions of bank accounts lead to different
+In the example in the code editor, the same definitions of bank accounts lead to different
 values, whereas the same definitions of notes lead to equal values.
 
 As we have seen in the previous sections, stateful classes introduce a notion of *identity*
@@ -38,4 +39,4 @@ implement their equality).
 ## Exercise
 
 - Complete the creation of two instances of the `BankAccount`.
-- Complete the creation of two instances of a c3 `Note`.
+- Complete the creation of two instances of a `c3` `Note`.
