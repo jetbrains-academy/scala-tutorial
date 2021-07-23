@@ -1,4 +1,0 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/Users/Sofia.Kolchanova/IdeaProjects/scala-tutorial/Lazy%20Evaluation/Lazy%20Lists/"), "Lazy-Lists")...
-[debug] Done updating ProjectRef(uri("file:/Users/Sofia.Kolchanova/IdeaProjects/scala-tutorial/Lazy%20Evaluation/Lazy%20Lists/"), "Lazy-Lists")
-[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
