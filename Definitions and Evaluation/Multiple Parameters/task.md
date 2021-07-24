@@ -7,7 +7,7 @@ Separate several parameters with commas:
 
 ## Parameters and Return Types 
 
-Function parameters come with their type, which is given after a colon
+Function parameters come with their type, which is given after a colon:
 
     def power(x: Double, y: Int): Double = ...
 
@@ -15,9 +15,9 @@ If a return type is given, it follows the parameter list.
 
 ## Val vs Def
 
-The right hand side of a `def` definition is evaluated on each use.
+The right-hand side of a `def` definition is evaluated on each use.
 
-The right hand side of a `val` definition is evaluated at the point of the definition
+The right-hand side of a `val` definition is evaluated at the point of the definition
 itself. Afterwards, the name refers to the value.
 
     val x = 2
@@ -27,11 +27,11 @@ For instance, `y` above refers to `4`, not `square(2)`.
 
 ## Evaluation of Function Applications
 
-Applications of parametrized functions are evaluated in a similar way as
+Applications of parametrized functions are evaluated in a way similar to
 operators:
 
  1. Evaluate all function arguments, from left to right.
- 2. Replace the function application by the function's right-hand side, and, at the same time
+ 2. Replace the function application by the function's right-hand side and, at the same time
  3. Replace the formal parameters of the function by the actual arguments.
 
 ## Example
@@ -52,7 +52,7 @@ This scheme of expression evaluation is called the *substitution model*.
 The idea underlying this model is that all evaluation does is *reduce
 an expression to a value*.
 
-It can be applied to all expressions, as long as they have no side effects.
+It can be applied to all expressions as long as they have no side effects.
 
 The substitution model is formalized in the λ-calculus, which gives
 a foundation for functional programming.
@@ -69,8 +69,8 @@ No. Here is a counter-example:
 
 ## Value Definitions and Termination
 
-The difference between `val` and `def` becomes apparent when the right
-hand side does not terminate. Given
+The difference between `val` and `def` becomes apparent when the right-hand
+side does not terminate. Given
 
       def loop: Int = loop
 
@@ -124,5 +124,5 @@ Scala normally uses call-by-value.
 ## Exercise
 
 Complete the following definition of the `triangleArea` function,
-which takes a triangle base and height as parameters and returns
+which takes the base and height of a triangle as parameters and returns
 its area.
