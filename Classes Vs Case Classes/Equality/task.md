@@ -14,7 +14,7 @@ values, whereas the same definitions of notes lead to equal values.
 
 As we have seen in the previous sections, stateful classes introduce a notion of *identity*
 that does not exist in case classes. Indeed, the value of `BankAccount` can change over
-time whereas the value of a `Note` is immutable.
+time, whereas the value of `Note` is immutable.
 
 In Scala, by default, comparing objects will compare their identity, but in the
 case of case class instances, the equality is redefined to compare the values of
@@ -38,5 +38,5 @@ implement their equality).
 
 ## Exercise
 
-- Complete the creation of two instances of the `BankAccount`.
-- Complete the creation of two instances of a `c3` `Note`.
+- Complete the creation of two instances of `BankAccount`.
+- Complete the creation of two instances of `c3` `Note`.
