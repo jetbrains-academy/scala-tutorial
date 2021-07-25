@@ -1,28 +1,28 @@
 
 ## Conditional Expressions
 
-To express choosing between two alternatives, Scala
-has a conditional expression `if-else`.
+To express the choice between two alternatives, Scala
+uses a conditional expression `if-else`.
 
-It looks like a `if-else` in Java, but is used for expressions, not statements.
+It looks like the `if-else` in Java but is used for expressions, not statements.
 
 Example:
 ~~~
     def abs(x: Double) = if (x >= 0) x else -x
 ~~~
-`x >= 0` is a *predicate*, of type `Boolean`.
+Here `x >= 0` is a *predicate* of type `Boolean`.
 
 ## Boolean Expressions 
 
-Boolean expressions `b` can be composed of
+Boolean expressions `b` can include:
 
     true  false      // Constants
     !b               // Negation
     b && b           // Conjunction
     b || b           // Disjunction
 
-and of the usual comparison operations:
-      e <= e, e >= e, e < e, e > e, e == e, e != e
+They can also contain the usual comparison operations:
+      e <= e, e >= e, e < e, e > e, e == e, e != e.
 
 ## Rewrite rules for Booleans
 
@@ -41,11 +41,11 @@ We say these expressions use "short-circuit evaluation".
 
 ## Summary
 
-You have seen simple elements of functional programing in Scala.
+You have seen simple elements of functional programing in Scala:
 
- - arithmetic and boolean expressions
- - conditional expressions if-else
- - functions with recursion
+ - arithmetic and boolean expressions;
+ - conditional expressions if-else;
+ - functions with recursion.
 
 You have learned the difference between the call-by-name and
 call-by-value evaluation strategies.
@@ -55,4 +55,4 @@ the substitution model.
 
 ## Exercise
 
-Complete the following method definition that computes the factorial of a number.
+Complete the definition of the following method, which computes the factorial of a number.
