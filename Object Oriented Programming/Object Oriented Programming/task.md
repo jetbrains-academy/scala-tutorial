@@ -2,7 +2,7 @@
 ## Abstract Classes 
 
 Consider the task of writing a class for sets of integers with
-the following operations.
+the following operations:
 
       abstract class IntSet {
         def incl(x: Int): IntSet
@@ -21,7 +21,7 @@ the operator `new`.
 
 Let's consider implementing sets as binary trees.
 
-There are two types of possible trees: a tree for the empty set, and
+There are two types of possible trees: a tree for an empty set and
 a tree consisting of an integer and two sub-trees.
 
 Here are their implementations:
@@ -44,9 +44,9 @@ Here are their implementations:
           else this
       }
 
-`Empty` and `NonEmpty` both *extend* the class `IntSet`.
+Both `Empty` and `NonEmpty` *extend* the class `IntSet`.
 
-This implies that the types `Empty` and `NonEmpty` *conform* to the type `IntSet`
+This implies that the types `Empty` and `NonEmpty` *conform* to the type `IntSet`:
 
  - an object of type `Empty` or `NonEmpty` can be used wherever an object of type
    `IntSet` is required.
@@ -71,8 +71,8 @@ The definitions of `contains` and `incl` in the classes
 `Empty` and `NonEmpty` *implement* the abstract
 functions in the base trait `IntSet`.
 
-It is also possible to *redefine* an existing, non-abstract
-definition in a subclass by using `override`.
+It is also possible to *redefine* an existing non-abstract
+definition in a subclass by using `override`:
 
       abstract class Base {
         def foo = 1
@@ -121,4 +121,4 @@ Can we implement one concept in terms of the other?
  - Higher-order functions in terms of objects?
 
 ## Exercise
-Complete the `nonEmptyExample` for it to return a new `NonEmpty` containing 7 and two `Empty` objects.
+Complete the `nonEmptyExample` to make it return a new `NonEmpty` containing 7 and two `Empty` objects.
