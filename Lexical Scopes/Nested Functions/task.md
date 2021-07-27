@@ -1,7 +1,7 @@
 
 ## Nested functions
 
-It's good functional programming style to split up a task into many small functions.
+It's good functional programming style to split up a task into several small functions.
 
 But the names of functions like `sqrtIter`, `improve`, and `isGoodEnough` (defined in the
 previous section) matter only for the *implementation* of `sqrt`, not for its *usage*.
@@ -39,12 +39,12 @@ putting the auxiliary functions inside `sqrt`.
  It contains a sequence of definitions or expressions.\
  The last element of a block is an expression that defines its value.\
  This return expression can be preceded by auxiliary definitions.\
- Blocks are themselves expressions; a block may appear everywhere an expression can.
+ Blocks are expressions themselves; a block may appear anywhere an expression can.
 
 ### Blocks and Visibility 
 
  The definitions inside a block are only visible from within the block.\
- The definitions inside a block *shadow* definitions of the same names
+ The definitions inside a block *shadow* the definitions of the same names
    outside the block.
 
 ## Exercise: Scope Rules 
