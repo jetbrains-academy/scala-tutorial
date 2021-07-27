@@ -3,7 +3,7 @@
 
 In the first sections, we saw how to write loops using recursion.
 
-### While-Loops 
+### While Loops 
 
 We can also write loops with the `while` keyword:
 
@@ -17,15 +17,15 @@ We can also write loops with the `while` keyword:
 As long as the condition of a *while* statement is `true`,
 its body is evaluated.
 
-### For-Loops 
+### For Loops 
 
-In Scala there is a kind of `for` loop:
+In Scala, there is a kind of `for` loop, too:
 
       for (i <- 1 until 3) { System.out.print(i.toString + " ") }
 
 This displays `1 2`.
 
-For-loops translate similarly to for-expressions, but using the
+*For* loops translate similarly to *for* expressions but use the
 `foreach` combinator instead of `map` and `flatMap`.
 
 `foreach` is defined on collections with elements of type `A` as follows:
@@ -37,7 +37,7 @@ Example:
 
       for (i <- 1 until 3; j <- "abc") println(s"$i $j")
 
-translates to:
+It translates to:
 
       (1 until 3) foreach (i => "abc" foreach (j => println(s"$i $j")))
 
