@@ -22,8 +22,8 @@ the reason for the failure:
 Like options and lists, `Try[A]` is an algebraic data type, so it can
 be decomposed using pattern matching.
 
-`Try[A]` also have `map`, `filter` and `flatMap`. They behave the same
-as with `Option[A]`, except that any exception that is thrown
+`Try[A]` also has `map`, `filter` and `flatMap`. They behave the same
+as with `Option[A]`, except that any exception thrown
 during their execution is converted into a `Failure`.
 
 ### Either
@@ -45,7 +45,7 @@ not converted into failures.
 ### Manipulating `Either[A, B]` Values
 
 Since Scala 2.12, `Either` has `map` and `flatMap`. These methods
-transform the `Right` case only. We say that `Either` is “right biased”:
+transform the `Right` case only. We say that `Either` is “right-biased”:
 
       Right(1).map((x: Int) => x + 1) shouldBe Right(2)
       Left("foo").map((x: Int) => x + 1) shouldBe Left("foo")
@@ -60,4 +60,4 @@ specify which “side” (`Left` or `Right`) you wanted to `map`.
 
 ## Exercise
 
-Complete the ```tripleEither()``` function, so it maps the successful results with the ```triple()``` function.
+Complete the ```tripleEither()``` function so that it maps the successful results with the ```triple()``` function.
