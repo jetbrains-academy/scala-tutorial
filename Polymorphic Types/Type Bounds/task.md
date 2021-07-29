@@ -1,6 +1,6 @@
 ## Type Bounds
 
-Consider the method `selection` that takes two animals as parameters
+Consider the method `selection`, which takes two animals as parameters
 and returns the one with the highest `fitness` value:
 
 What would be the best type you can give to `selection`? Maybe:
@@ -21,7 +21,7 @@ A way to express this is:
 
 Here, “`<: Animal`” is an *upper bound* of the type parameter `A`.
 
-It means that `A` can be instantiated only to types that conform to `Animal`.
+It means that `A` can be instantiated only to the types that conform to `Animal`.
 
 Generally, the notation
 
@@ -34,11 +34,11 @@ You can also use a lower bound for a type variable.
 
       A >: Reptile
 
-The type parameter `A` that can range only over *supertypes* of `Reptile`.
+The type parameter `A` can range over only the *supertypes* of `Reptile`.
 
 So `A` could be one of `Reptile`, `Animal`, `AnyRef`, or `Any`.
 
-(We will see later on where lower bounds are useful).
+(We will see  where lower bounds are useful later on.)
 
 ### Mixed Bounds 
 
