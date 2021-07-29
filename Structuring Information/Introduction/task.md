@@ -11,15 +11,15 @@ We will base our examples on the following domain, a *music sheet*:
 
 ### Aggregating Information With Case Classes
 
-First, let’s focus on *notes*. Suppose that, in our program, we are
+First, let’s focus on *notes*. Suppose that in our program, we are
 interested in the following properties of notes: their
 [name](https://en.wikipedia.org/wiki/Musical_note#12-tone_chromatic_scale )
 (A, B, C, etc.), their
 [duration](https://en.wikipedia.org/wiki/Note_value) (whole, half,
-quarter, etc.) and their octave number.
+quarter, etc.), and their octave number.
 
 In summary, our note model *aggregates* several data (name,
-duration and octave). We express this in Scala by using a *case class*
+duration, and octave). We express this in Scala by using a *case class*
 definition:
 
       case class Note(
@@ -37,8 +37,8 @@ of this type by calling its *constructor*:
 constructor.
 
 Then, you can retrieve the information carried by each *member* (`name`,
-`duration` and `octave`) by using the dot notation.
+`duration`, and `octave`) by using the dot notation.
 
 ## Exercise
 
-Complete the setup method for the C3 Note.
+Complete the setup method for the `C3` Note.
