@@ -6,7 +6,7 @@ type can be implemented like normal classes.
 
 But what about functions?
 
-In fact function values *are* treated as objects in Scala.
+In fact, function values *are* treated as objects in Scala.
 
 The function type `A => B` is just an abbreviation for the class
 `scala.Function1[A, B]`, which is defined as follows:
@@ -46,7 +46,7 @@ type, is expanded to:
 
       f.apply(a, b)
 
-So the OO-translation of:
+So the OO-translation of
 
       val f = (x: Int) => x * x
       f(7)
@@ -66,15 +66,15 @@ Note that a method such as
 
 is not itself a function value.
 
-But if `f` is used in a place where a Function type is expected, it is
-converted automatically to the function value
+But if `f` is used in a place where a function type is expected, it is
+converted automatically to the function value:
 
       (x: Int) => f(x)
 
 ### `for` expressions 
 
 You probably noticed that several data types of the standard library
-have methods named `map`, `flatMap` and `filter`.
+have methods named `map`, `flatMap`, and `filter`.
 
 These methods are so common in practice that Scala supports a dedicated
 syntax: *for expressions*.
@@ -89,7 +89,7 @@ You can write:
 
       for (x <- xs) yield x + 1
 
-You can read it as “for every value, that I name ‘x’, in ‘xs’, return ‘x + 1’”.
+You can read it as “for every value that I name ‘x’, in ‘xs’, return ‘x + 1’”.
 
 ### `filter`
 
@@ -124,7 +124,7 @@ every value ‘y’ in ‘ys’, return ‘(x, y)’”.
 
 ## Exercise
 
-Complete the function, so it becomes an equivalent of the following de-sugared code:
+Complete the function so that it becomes an equivalent of the following de-sugared code:
 
       xs.filter { x =>
         x % 2 == 0
