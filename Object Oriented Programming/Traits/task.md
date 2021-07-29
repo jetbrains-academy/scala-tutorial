@@ -6,10 +6,10 @@ In Scala, a class can only have one superclass.
 But what if a class has several natural supertypes to which it conforms
 or from which it wants to inherit code?
 
-Here, you could use `trait`s.
+In such case, you could use `trait`s.
 
 A trait is declared like an abstract class, just with `trait` instead of
-`abstract class`.
+`abstract class`:
 
       trait Planar {
         def height: Int
@@ -50,8 +50,8 @@ There is no value of type `Nothing`.
 
 Why is that useful?
 
- - To signal abnormal termination
- - As an element type of empty collections
+ - It signals abnormal termination.
+ - It may be an element type of empty collections.
 
 ### The Null Type 
 
@@ -60,7 +60,7 @@ Every reference class type also has `null` as a value.
 The type of `null` is `Null`.
 
 `Null` is a subtype of every class that inherits from `Object`; it is
-incompatible with subtypes of `AnyVal`.
+incompatible with the subtypes of `AnyVal`.
 
       val x = null         // x: Null
       val y: String = null // y: String
@@ -72,3 +72,6 @@ The following `Reducer` abstract class defines how to
 reduce a list of values into a single value by starting
 with an initial value and combining it with each element
 of the list.
+Complete the implementation of the objects `Product` and `Sum`, which 
+inherit from `Reducer`, so that the first `println` statement prints `24` 
+and the second one – `10`.
