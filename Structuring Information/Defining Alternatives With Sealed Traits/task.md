@@ -4,7 +4,7 @@
 If we look at the introductory picture, we see that musical symbols
 can be either *notes* or *rests* (but nothing else).
 
-So, we want to introduce the concept of *symbol*, as something
+So, we want to introduce the concept of *symbol* as something
 that can be embodied by a fixed set of alternatives: a note or rest.
 We can express this in Scala using a *sealed trait* definition:
 
@@ -33,10 +33,10 @@ to do so:
         }
 
 The above `match` expression first checks if the given `Symbol` is a
-`Note`, and if it is the case it extracts its fields (`name`, `duration`
+`Note`, and if it is the case, it extracts its fields (`name`, `duration`,
 and `octave`) and evaluates the expression at the right of the arrow.
 Otherwise, it checks if the given `Symbol` is a `Rest`, and if it
-is the case it extracts its `duration` field, and evaluates the
+is the case, it extracts its `duration` field and evaluates the
 expression at the right of the arrow.
 
 When we write `case Rest(duration) => …`, we say that `Rest(…)` is a
@@ -82,7 +82,7 @@ def nonExhaustiveDuration(symbol: Symbol): String =
   }
 }
 ```
-If we try to run the above code to see how the compiler informs us that
+We can try to run the above code to see how the compiler informs us that
 we don’t handle all the cases in `nonExhaustiveDuration`.
 
 ### Equals
@@ -92,7 +92,7 @@ aggregate values, comparing case class instances compares their values.
 
 ## Exercise
 
-Complete the `Rest` class declaration for it to extend Symbol. 
+Complete the `Rest` class declaration so that it extends `Symbol`. 
 Complete the `caseClassEquals` and `symbolDuration` method definitions.
 
 <div class="hint">In the method <code>caseClassEquals</code>, check if case class instances are equal.</div>
