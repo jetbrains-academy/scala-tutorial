@@ -10,7 +10,7 @@ Remember the definition of `IntSet` (in section [Object Oriented Programming](co
 
 It seems too narrow to define only sets with `Int` elements.
 
-We'd need another class hierarchy for `Double` lists, and so on,
+We'd need another class hierarchy for `Double` lists and so on,
 one for each possible element type.
 
 We can generalize the definition using a *type parameter*:
@@ -26,13 +26,13 @@ We can generalize the definition using a *type parameter*:
         …
       }
 
-Type parameters are written in square brackets, e.g. `[A]`.
+Type parameters are written in square brackets, e.g., `[A]`.
 
 ## Generic Functions
 
 Like classes, functions can have type parameters.
 
-For instance, here is a function that creates a set consisting of a single element.
+For instance, here is a function that creates a set consisting of a single element:
 
       def singleton[A](elem: A) = new NonEmpty[A](elem, new Empty[A], new Empty[A])
 
@@ -60,9 +60,9 @@ before evaluating the program.
 
 This is also called *type erasure*.
 
-Languages that use type erasure include Java, Scala, Haskell, ML, OCaml.
+Languages that use type erasure include Java, Scala, Haskell, ML, and OCaml.
 
-Some other languages keep the type parameters around at run time, these include C++, C#, F#.
+Some other languages keep the type parameters around at run time; these include C++, C#, and F#.
 
 ## Polymorphism 
 
@@ -75,7 +75,7 @@ In programming, it means that
 
 We have seen two principal forms of polymorphism:
 
- - subtyping: instances of a subclass can be passed to a base class
+ - subtyping: instances of a subclass can be passed to a base class;
  - generics: instances of a function or class are created by type parameterization.
 
 The remaining subsections compare their interaction.
@@ -101,5 +101,5 @@ Consider the following class hierarchy:
 
 ## Exercise 
 
-Complete the following implementation of the `size` function that returns
+Complete the following implementation of the `size` function, which returns
 the size of a given list.
