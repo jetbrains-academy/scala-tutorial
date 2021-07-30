@@ -17,12 +17,12 @@ Remember the sorting function:
       }
 
 
-How to parameterize `insertionSort` so that it can also be used for
+How can we parameterize `insertionSort` so that it can also be used for
 lists with elements other than `Int` (like, for instance, `Rational`)?
 
       def insertionSort[T](xs: List[T]): List[T] = ...
 
-The above attempt does not work, because the comparison `<` in `insert`
+The above attempt does not work because the comparison `<` in `insert`
 is not defined for arbitrary types `T`.
 
 Idea: parameterize `insert` with the necessary comparison function.
@@ -64,11 +64,11 @@ Or, since parameter types can be inferred from the call `insertionSort(xs)`:
 
 ## Parametrization with Ordered
 
-There is already a class in the standard library that represents orderings.
+There is already a class in the standard library that represents orderings:
 
       scala.math.Ordering[T]
 
-provides ways to compare elements of type `T`. So instead of
+It provides ways to compare elements of type `T`. So instead of
 parameterizing with the `lessThan` operation directly, we could parameterize
 with `Ordering` instead:
 
@@ -103,7 +103,7 @@ We can avoid this by making `ord` an implicit parameter:
         … insert(y, insertionSort(ys)) …
       }
 
-Then calls to `insertionSort` can avoid the ordering parameters:
+Then, calls to `insertionSort` can avoid the ordering parameters:
 
       insertionSort(nums)
       insertionSort(fruits)
@@ -117,9 +117,9 @@ Say, a function takes an implicit parameter of type `T`.
 
 The compiler will search an implicit definition that
 
- - is marked `implicit`
- - has a type compatible with `T`
- - is visible at the point of the function call, or is defined
+ - is marked `implicit`;
+ - has a type compatible with `T`;
+ - is visible at the point of the function call or is defined
    in a companion object associated with `T`.
 
 If there is a single (most specific) definition, it will be taken as
