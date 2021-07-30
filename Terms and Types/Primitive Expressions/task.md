@@ -15,8 +15,8 @@
 
  Every non-trivial programming language provides:
 
-  - primitive expressions representing the simplest elements ;
-  - ways to *combine* expressions ;
+  - primitive expressions representing the simplest elements;
+  - ways to *combine* expressions;
   - ways to *abstract* expressions, which introduce a name for an expression by which it can then be referred to.
 
  ## Primitive Expressions
@@ -35,14 +35,14 @@
 
     `"Hello, Scala!"`
  
- (Note the usage of double quotes, `"`).
+ (Note the usage of double quotes `"`.)
 
  ## Compound Expressions 
 
  More complex expressions can be expressed by *combining* simpler expressions
  using *operators*. They can therefore express more complex computations:
 
-  - How many is one plus two?
+  - How much is one plus two?
 
     `1 + 2`
  
@@ -52,11 +52,11 @@
  
  ## Evaluation 
 
- A non-primitive expression is evaluated as follows.
+ A non-primitive expression is evaluated as follows:
 
-  1. Take the leftmost operator
-  2. Evaluate its operands (left before right)
-  3. Apply the operator to the operands
+  1. Take the leftmost operator.
+  2. Evaluate its operands (left before right).
+  3. Apply the operator to the operands.
 
   The evaluation process stops once it results in a value.
 
