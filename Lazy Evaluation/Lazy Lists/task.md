@@ -118,9 +118,9 @@ That's why the second argument to `LazyList.cons` is not evaluated at the point 
 
 Instead, it will be evaluated each time someone calls `tail` on a `LazyList` object.
 
-In Scala 2.13, LazyList (previously Stream) became fully lazy from head to tail. To make it possible,
+In Scala 2.13, `LazyList` (previously `Stream`) became fully lazy from head to tail. To make it possible,
 methods (`filter`, `flatMap`, etc.) are implemented in a way where the head is not evaluated unless it is
-explicitly required.
+explicitly indicated.
 
 For instance, here's `filter`:
 
