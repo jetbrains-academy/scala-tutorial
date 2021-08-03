@@ -14,7 +14,7 @@ We can also write loops with the `while` keyword:
         r
       }
 
-As long as the condition of a *while* statement is `true`,
+As long as the condition of the `while` statement is `true`,
 its body is evaluated.
 
 ### For Loops 
@@ -25,7 +25,7 @@ In Scala, there is a kind of `for` loop, too:
 
 This displays `1 2`.
 
-*For* loops translate similarly to *for* expressions but use the
+`For` loops translate similarly to `for` expressions but use the
 `foreach` combinator instead of `map` and `flatMap`.
 
 `foreach` is defined on collections with elements of type `A` as follows:
