@@ -1,12 +1,12 @@
 
 ## Naming Things
 
-Consider the following program that computes the area of a disc
+Consider the following program, which computes the area of a disc
 whose radius is `10`:
 
     3.14159 * 10 * 10
 
-To make complex expressions more readable we can give meaningful names to
+To make complex expressions more readable, we can give meaningful names to
 intermediate expressions:
 
     val radius = 10
@@ -14,12 +14,12 @@ intermediate expressions:
 
     pi * radius * radius
 
-Besides making the last expression more readable it also allows us to
+Besides making the last expression more readable, it also allows us to
 not repeat the actual value of the radius.
 
 ## Evaluation
 
-A name is evaluated by replacing it with the right hand side of its definition
+A name is evaluated by replacing it with the right-hand side of its definition.
 
 ### Example
 

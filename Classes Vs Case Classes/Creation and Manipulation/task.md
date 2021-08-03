@@ -1,10 +1,10 @@
 
-In the previous sections we have seen how case classes could be
-used to achieve information aggregation, and also how classes
+In the previous sections, we have seen how case classes could be
+used to achieve information aggregation and also how classes
 could be used to achieve data abstraction or to define stateful
 objects.
 
-What are the relationship between classes and case classes? How
+What is the relationship between classes and case classes? How
 do they differ?
 
 ## Creation and Manipulation

@@ -8,19 +8,19 @@ can be passed as a parameter and returned as a result.
 
 This provides a flexible way to compose programs.
 
-Functions that take other functions as parameters or that return functions
-as results are called *higher order functions*.
+Functions that take other functions as parameters or return functions
+as a result are called *higher order functions*.
 
 ###  Motivation 
 
 Consider the following programs.
 
-Take the sum of the integers between `a` and `b`:
+Taking the sum of the integers between `a` and `b`:
 
       def sumInts(a: Int, b: Int): Int =
         if (a > b) 0 else a + sumInts(a + 1, b)
 
-Take the sum of the cubes of all the integers between `a`
+Taking the sum of the cubes of all the integers between `a`
 and `b`:
 
       def cube(x: Int): Int = x * x * x
@@ -28,7 +28,7 @@ and `b`:
       def sumCubes(a: Int, b: Int): Int =
         if (a > b) 0 else cube(a) + sumCubes(a + 1, b)
 
-Take the sum of the factorials of all the integers between `a`
+Taking the sum of the factorials of all the integers between `a`
 and `b`:
 
       def sumFactorials(a: Int, b: Int): Int =
@@ -72,22 +72,22 @@ Passing functions as parameters leads to the creation of many small functions.
 
 Sometimes it is tedious to have to define (and name) these functions using `def`.
 
-Compare to strings: We do not need to define a string using `val`. Instead of:
+Compare to strings: we do not need to define a string using `val`. Instead of:
 
       val str = "abc"; println(str)
 
-We can directly write:
+we can directly write:
 
       println("abc")
 
-because strings exist as *literals*. Analogously we would like function
+because strings exist as *literals*. Analogously, we can use function
 literals, which let us write a function without giving it a name.
 
 These are called *anonymous functions*.
 
 ### Anonymous Function Syntax
 
-Example of a function that raises its argument to a cube:
+Example of a function that raises its argument to the third power:
 
       (x: Int) => x * x * x
 
@@ -108,7 +108,7 @@ can always be expressed using `def` as follows:
 
       { def f(x1: T1, …, xn: Tn) = e ; f }
 
-where `f` is an arbitrary, fresh name (that's not yet used in the program).
+where `f` is an arbitrary, fresh name (that has not yet been used in the program).
 
 One can therefore say that anonymous functions are *syntactic sugar*.
 

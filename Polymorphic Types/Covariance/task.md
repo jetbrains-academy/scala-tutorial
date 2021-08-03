@@ -4,26 +4,24 @@
 There's another interaction between subtyping and type parameters we
 need to consider.
 
-Consider the following type modeling a field containing an animal:
+Consider the following type modeling a field that contains an animal:
 
       trait Field[A] {
         def get: A // returns the animal that lives in this field
       }
 
-Given
+Given:
 
       Zebra <: Mammal
 
-is
+Would the following be true?
 
       Field[Zebra] <: Field[Mammal]
-
-?
 
 Intuitively, this makes sense: a field containing a zebra is a special case of a field
 containing an arbitrary mammal.
 
-We call types for which this relationship holds *covariant*
+We call the types for which this relationship holds *covariant*
 because their subtyping relationship varies with the type parameter.
 
 Does covariance make sense for all types, not just for `Field`?
@@ -34,14 +32,14 @@ For perspective, let's look at arrays in Java (and C#).
 
 Reminder:
 
- - An array of `T` elements is written `T[]` in Java.
- - In Scala we use parameterized type syntax `Array[T]` to refer to the same type.
+ - An array of `T` elements is written as `T[]` in Java.
+ - In Scala, we use the parameterized type syntax `Array[T]` to refer to the same type.
 
 Arrays in Java are covariant, so one would have:
 
       Zebra[] <: Mammal[]
 
-But covariant array typing causes problems.
+However, covariant array typing causes problems.
 
 To see why, consider the Java code below:
 
@@ -50,27 +48,27 @@ To see why, consider the Java code below:
       mammals[0] = new Giraffe()     // Allowed because a `Giraffe` is a subtype of `Mammal`
       Zebra zebra = zebras[0]        // Get the first `Zebra` … which is actually a `Giraffe`!
 
-It looks like we assigned in the last line a `Giraffe` to a
-variable of type `Zebra`!
+It looks like we assigned a `Giraffe` to a
+variable of type `Zebra` in the last line!
 
 What went wrong?
 
 #### The Liskov Substitution Principle 
 
-The following principle, stated by Barbara Liskov, tells us when a
+The following principle stated by Barbara Liskov tells us when a
 type can be a subtype of another.
 
 If `A <: B`, then everything one can to do with a value of type `B` one should also
 be able to do with a value of type `A`.
 
-The problematic array example would be written as follows in Scala:
+The problematic array example would be written in Scala as follows:
 
       val zebras: Array[Zebra] = Array(new Zebra)
       val mammals: Array[Mammal] = zebras
       mammals(0) = new Giraffe
       val zebra: Zebra = zebras(0)
 
-If you try to compile this example you will get a compile error at line 2:
+If you try to compile this example, you will get a compile error at line 2:
 
       type mismatch;
         found   : Array[Zebra]
@@ -78,29 +76,29 @@ If you try to compile this example you will get a compile error at line 2:
 
 ## Variance 
 
-We have seen that some types should be covariant whereas
+We have seen that some types should be covariant, whereas
 others should not.
 
 Roughly speaking, a type that accepts mutations of its elements should
 not be covariant.
 
-But immutable types can be covariant, if some conditions
+Meanwhile, immutable types can be covariant if some conditions
 on methods are met.
 
 ## Definition of Variance
 
-Say `C[T]` is a parameterized type and `A`, `B` are types such that `A <: B`.
+Say `C[T]` is a parameterized type, and `A` and `B` are types such that `A <: B`.
 
 In general, there are *three* possible relationships between `C[A]` and `C[B]`:
 
- - `C[A] <: C[B]`, `C` is *covariant*,
- - `C[A] >: C[B]`, `C` is *contravariant*,
+ - `C[A] <: C[B]`, `C` is *covariant*;
+ - `C[A] >: C[B]`, `C` is *contravariant*;
  - neither `C[A]` nor `C[B]` is a subtype of the other, `C` is *nonvariant*.
 
 Scala lets you declare the variance of a type by annotating the type parameter:
 
- - `class C[+A] { … }`, `C` is *covariant*,
- - `class C[-A] { … }`, `C` is *contravariant*,
+ - `class C[+A] { … }`, `C` is *covariant*;
+ - `class C[-A] { … }`, `C` is *contravariant*;
  - `class C[A] { … }`, `C` is *nonvariant*.
 
 ### Typing Rules for Functions 
@@ -134,27 +132,26 @@ an example of a contravariant type.
 
 ### Variance Checks 
 
-We have seen in the array example that the combination of covariance with
+In the array example, we have seen that the combination of covariance with
 certain operations is unsound.
 
 In the case of `Array`, the problematic combination is:
- - the covariant type parameter `T`
- - which appears in parameter position of the method `update`.
+ - the covariant type parameter `T` which appears in the parameter position of the method `update`.
 
 The Scala compiler will check that there are no problematic combinations when
 compiling a class with variance annotations.
 
-Roughly,
+Roughly speaking,
 
  - *covariant* type parameters can only appear in method results.
  - *contravariant* type parameters can only appear in method parameters.
  - *invariant* type parameters can appear anywhere.
 
-The precise rules are a bit more involved, fortunately the Scala compiler performs them for us.
+The precise rules are a bit more involved; fortunately, the Scala compiler performs them for us.
 
 #### Variance-Checking the Function Trait 
 
-Let's have a look again at Function1:
+Let's have a look at `Function1` again:
 
       trait Function1[-T, +U] {
         def apply(x: T): U
@@ -165,13 +162,13 @@ Here,
  - `T` is contravariant and appears only as a method parameter type
  - `U` is covariant and appears only as a method result type
 
-So the method is checks out OK.
+So the method checks out OK.
 
 ## Making Classes Covariant 
 
 Sometimes, we have to put in a bit of work to make a class covariant.
 
-Consider adding a `prepend` method to `Stream` which prepends a given
+Consider adding a `prepend` method to `Stream`, which prepends a given
 element, yielding a new stream.
 
 A first implementation of `prepend` could look like this:
@@ -186,14 +183,14 @@ Why does the above code not type-check?
 
 `prepend` fails variance checking.
 
-Indeed, the compiler is right to throw out `Stream` with `prepend`,
-because it violates the Liskov Substitution Principle:
+Indeed, the compiler is right to throw out `Stream` with `prepend`
+because it violates the Liskov Substitution Principle.
 
-Here's something one can do with a stream `mammals` of type `Stream[Mammal]`:
+Here's something one can do with the stream `mammals` of type `Stream[Mammal]`:
 
       mammals.prepend(new Giraffe)
 
-But the same operation on a list `zebras` of type
+However, the same operation on the list `zebras` of type
 `Stream[Zebra]` would lead to a type error:
 
       zebras.prepend(new Giraffe)
@@ -214,10 +211,10 @@ We can use a *lower bound*:
 ```
       Stream.cons(elem, this)
 ```
-This passes variance checks, because:
+This does pass variance checks because:
 
- - covariant type parameters may appear in lower bounds of method type parameters
- - contravariant type parameters may appear in upper bounds of method
+ - covariant type parameters may appear in the lower bounds of method type parameters;
+ - contravariant type parameters may appear in the upper bounds of a method.
 
 ## Exercise
 

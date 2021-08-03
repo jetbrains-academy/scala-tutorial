@@ -21,7 +21,7 @@ results into a single list using `flatMap`:
 ### Optional Values
 
 We represent an optional value of type `A` with the type `Option[A]`.
-This is useful to implement, for instance, partially defined
+This is useful to implement, for instance, in partially defined
 functions:
 
       // The `sqrt` function is not defined for negative values

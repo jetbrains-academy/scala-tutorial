@@ -11,11 +11,11 @@ because it is very common in practice.
 So, when we define a case class, the Scala compiler defines a class
 enhanced with some more methods and a companion object.
 
-For instance, the following case class definition:
+For instance, look at the following case class definition:
 
       case class Note(name: String, duration: String, octave: Int)
 
-Expands to the following class definition:
+It expands to the following class definition:
 
       class Note(_name: String, _duration: String, _octave: Int) extends Serializable {
     

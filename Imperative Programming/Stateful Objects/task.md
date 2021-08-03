@@ -15,7 +15,7 @@ Programs can be evaluated by *rewriting*:
     side, and, at the same time, by replacing the formal parameters by the actual
     arguments.
 
-Say you have the following two functions `iterate` and `square`:
+Say, you have the following two functions `iterate` and `square`:
 
       def iterate(n: Int, f: Int => Int, x: Int) =
         if (n == 0) x else iterate(n-1, f, f(x))
@@ -34,10 +34,10 @@ Then the call `iterate(1, square, 3)` gets rewritten as follows:
 Rewriting can be done anywhere in a term, and all rewritings which
 terminate lead to the same solution.
 
-This is an important result of the λ-calculus, the theory
+This is an important result of the λ-calculus, i.e., the theory
 behind functional programming.
 
-For instance, these two rewriting will eventually lead to the same result:
+For instance, these two rewritings will eventually lead to the same result:
 
       if (1 == 0) 3 else iterate(1 - 1, square, square(3))
       iterate(0, square, square(3))
@@ -49,7 +49,7 @@ For instance, these two rewriting will eventually lead to the same result:
 ### Stateful Objects
 
 One normally describes the world as a set of objects, some of which
-have state that *changes* over the course of time.
+have a state that *changes* over the course of time.
 
 An object *has a state* if its behavior is influenced by its
 history.
@@ -62,7 +62,7 @@ the account.
 
 Every form of mutable state is constructed from variables.
 
-A variable definition is written like a value definition, but with the
+A variable definition is written like a value definition but with the
 keyword `var` in place of `val`:
 
       var x: String = "abc"
@@ -106,13 +106,13 @@ through assignments.
 Note that `balance` is `private` in the `BankAccount`
 class, it therefore cannot be accessed from outside the class.
 
-To create bank accounts, we use the usual notation for object creation:
+To create bank accounts, we use the common notation for object creation:
 
       val account = new BankAccount
 
 ## Working with Mutable Objects
 
-Here is a program that manipulates bank accounts.
+Here is a program that manipulates bank accounts:
 
       val account = new BankAccount       // account: BankAccount = BankAccount
       account deposit 50                  //
@@ -126,9 +126,9 @@ Clearly, accounts are stateful objects.
 ## Identity and Change 
 
 Assignment poses the new problem of deciding whether two expressions
-are "the same"
+are "the same".
 
-When one excludes assignments and one writes:
+When one excludes assignments and writes:
 
       val x = E; val y = E
 
@@ -137,9 +137,9 @@ where `E` is an arbitrary expression, then it is reasonable to assume that
 
       val x = E; val y = x
 
-(This property is usually called *referential transparency*)
+(This property is usually called *referential transparency*.)
 
-But once we allow the assignment, the two formulations are different. For example:
+But once we allow assignment, the two formulations become different. For example:
 
       val x = new BankAccount
       val y = new BankAccount
@@ -161,7 +161,7 @@ In a somewhat informal way, this property is stated as follows:
 
 ### Testing for Operational Equivalence 
 
-To test if `x` and `y` are the same, we must
+To test if `x` and `y` are the same, we must:
 
  - Execute the definitions followed by an arbitrary sequence `S` of operations that
    involves `x` and `y`, observing the possible outcomes.
@@ -221,11 +221,12 @@ the `x` in the definition of `y` could be replaced by `new BankAccount`.
 
 But we have seen that this change leads to a different program!
 
-The substitution model ceases to be valid when we add the assignment.
+The substitution model ceases to be valid when we add assignment.
 
 It is possible to adapt the substitution model by introducing a *store*,
 but this becomes considerably more complicated.
 
 
 ## Exercise
-Complete the `deposit` definition to return the sum of `balance` and `amount` in case of the positive one.
+Complete the `deposit` definition to return the sum of `balance` and `amount` in case the `amount` is positive.
+Complete the `withdraw` definition to return the difference between `balance` and `amount` in case the `amount` is negative.

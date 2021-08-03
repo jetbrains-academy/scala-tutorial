@@ -1,7 +1,7 @@
 ## Named Parameters
 
-It can sometimes be difficult to figure out what is the meaning of
-each parameter passed to a function. Consider for instance the following
+It can sometimes be difficult to figure out what the meaning of
+each parameter passed to a function is. Consider for instance the following
 expression:
 
       Range(1, 10, 2)
@@ -13,7 +13,7 @@ Based on the fact that the `Range` constructor is defined as follows:
 
       case class Range(start: Int, end: Int, step: Int)
 
-We can rewrite our expression as follows:
+we can rewrite our expression as follows:
 
       Range(start = 1, end = 10, step = 2)
 
@@ -22,15 +22,15 @@ from 1 to 10 by increments of 2.
 
 ### Default Values 
 
-Methods’ parameters can have default values. Let’s refine the `Range`
+Method parameters can have default values. Let’s refine the `Range`
 constructor:
 
       case class Range(start: Int, end: Int, step: Int = 1)
 
 Here, we say that the `step` parameter has a default value, `1`.
 
-Then, at use site we can omit to supply this parameter and the compiler
-will supply it for us, by using its default value.
+Then, at use site, we can omit this parameter, and the compiler
+will supply it for us by using its default value.
 
 
 ### Repeated Parameters

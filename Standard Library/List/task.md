@@ -3,15 +3,15 @@
 
 The list is a fundamental data structure in functional programming.
 
-A list having `x1`, …, `xn` as elements is written `List(x1, …, xn)`:
+A list having `x1`, …, `xn` as elements is written as `List(x1, …, xn)`:
 
       val fruit  = List("apples", "oranges", "pears")
       val nums   = List(1, 2, 3, 4)
       val diag3  = List(List(1, 0, 0), List(0, 1, 0), List(0, 0, 1))
       val empty  = List()
 
- - Lists are immutable --- the elements of a list cannot be changed,
- - Lists are recursive (as you will see in the next subsection),
+ - Lists are immutable – the elements of a list cannot be changed.
+ - Lists are recursive (as you will see in the next subsection).
  - Lists are *homogeneous*: a list is intended to be composed of elements that all have the same type.
 
 The type of a list with elements of type `T` is written `List[T]`:
@@ -56,7 +56,7 @@ So the expression above is equivalent to:
  
 It is possible to decompose lists with pattern matching:
 
- - `Nil`: the `Nil` constant,
+ - `Nil`: the `Nil` constant;
  - `p :: ps`: A pattern that matches a list with a `head` matching `p` and a
    `tail` matching `ps`.
 ```
@@ -75,9 +75,9 @@ It is possible to decompose lists with pattern matching:
 ```
 ## Exercise: Sorting Lists
 
-Suppose we want to sort a list of numbers in ascending order:
+Suppose we want to sort a list of numbers in ascending order.
 
- -  One way to sort the list `List(7, 3, 9, 2)` is to sort the
+ -  One way to sort the list `List(7, 3, 9, 2)` is to first sort the
     tail `List(3, 9, 2)` to obtain `List(2, 3, 9)`.
  -  The next step is to insert the head `7` in the right place
     to obtain the result `List(2, 3, 7, 9)`.

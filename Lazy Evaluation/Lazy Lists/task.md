@@ -1,7 +1,7 @@
 
 ## Motivation
 
-Consider the following program that finds the second prime number between 1000 and 10000:
+Consider the following program, which finds the second prime number between 1000 and 10000:
 
       ((1000 to 10000) filter isPrime)(1)
 
@@ -16,19 +16,19 @@ This is *much* shorter than the recursive alternative:
       
       def secondPrime(from: Int, to: Int) = nthPrime(from, to, 2)
 
-But from a standpoint of performance, the first version is pretty bad; it constructs
+But from a standpoint of performance, the first version is pretty bad: it constructs
 *all* prime numbers between `1000` and `10000` in a list, but only ever looks at
 the first two elements of that list.
 
-Reducing the upper bound would speed things up, but risks that we miss the
+Reducing the upper bound would speed things up, but it creates a risks of missing the
 second prime number altogether.
 
 ## Delayed Evaluation
 
-However, we can make the short-code efficient by using a trick:
+However, we can make the short code efficient by using a trick:
 
 - Avoid computing the tail of a sequence until it is needed for the evaluation
-  result (which might be never)
+  result (which might be never).
 
 This idea is implemented in a new class, the `LazyList`.
 
@@ -36,7 +36,7 @@ LazyLists are similar to lists, but their elements are evaluated only ''on deman
 
 ## Defining LazyLists
 
-LazyLists are defined from a constructor `LazyList.cons`.
+LazyLists are defined from the `LazyList.cons` constructor.
 
 For instance,
 
@@ -51,16 +51,16 @@ between `lo` and `hi`:
         if (lo >= hi) LazyList.empty
         else LazyList.cons(lo, llRange(lo + 1, hi))
 
-Compare to the same function that produces a list:
+Compare it to a similar function that produces a list:
 
       def listRange(lo: Int, hi: Int): List[Int] =
         if (lo >= hi) Nil
         else lo :: listRange(lo + 1, hi)
 
-The functions have almost identical structure yet they evaluate quite differently.
+The functions have almost identical structure, yet they evaluate quite differently.
 
 - `listRange(start, end)` will produce a list with `end - start` elements and return it.
-- `llRange(start, end)` returns a single object of type `LazyList` with `start` as head element.
+- `llRange(start, end)` returns a single object of type `LazyList` with `start` as the head element.
     - The other elements are only computed when they are needed, where “needed” means that someone calls `tail` on the stream.
 
 ## Methods on LazyLists
@@ -75,15 +75,15 @@ The one major exception is `::`.
 
 `x :: xs` always produces a list, never a lazy list.
 
-There is however an alternative operator `#::` which produces a lazy list.
+There is, however, an alternative operator `#::`, which produces a lazy list:
 
       x #:: xs  ==   LazyList.cons(x, xs)
 
-`#::` can be used in expressions as well as patterns.
+`#::` can be used in expressions as well as in patterns.
 
 ## Implementation of LazyLists
 
-The implementation of lazy lists is quite close to the one of lists.
+The implementation of lazy lists is quite close to that of lists.
 
 Here's the class `LazyList`:
 
@@ -118,9 +118,9 @@ That's why the second argument to `LazyList.cons` is not evaluated at the point 
 
 Instead, it will be evaluated each time someone calls `tail` on a `LazyList` object.
 
-In Scala 2.13, LazyList (previously Stream) became fully lazy from head to tail. To make it possible,
-methods (`filter`, `flatMap`...) are implemented in a way where the head is not being evaluated if is
-not explicitly indicated.
+In Scala 2.13, `LazyList` (previously `Stream`) became fully lazy from head to tail. To make it possible,
+methods (`filter`, `flatMap`, etc.) are implemented in a way where the head is not evaluated unless it is
+explicitly indicated.
 
 For instance, here's `filter`:
 
@@ -146,6 +146,6 @@ For instance, here's `filter`:
 ## Exercise
 
 Consider the modification of `llRange` given in the code editor. When you write
-`llRange(1, 10).take(3).toList` what is the value of `rec`?
+`llRange(1, 10).take(3).toList`, what is the value of `rec`?
 
-Be careful, head is evaluating too!
+Be careful, the head is also evaluated!

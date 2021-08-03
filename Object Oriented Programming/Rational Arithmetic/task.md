@@ -34,7 +34,7 @@ In Scala, we do this by defining a *class*:
 
 This definition introduces two entities:
 
- - A new *type*, named `Rational`.
+ - A new *type*, named `Rational`;
  - A *constructor* `Rational` to create elements of this type.
 
 Scala keeps the names of types and values in *different namespaces*.
@@ -45,7 +45,7 @@ So there's no conflict between the two definitions of `Rational`.
 We call the elements of a class type *objects*.
 
 We create an object by prefixing an application of the constructor of
-the class with the operator `new`.
+the class with the operator `new`:
 
       new Rational(1, 2)
 
@@ -92,8 +92,8 @@ abstraction in the data abstraction itself.
 
 Such functions are called *methods*.
 
-Rational numbers now would have, in addition to the functions `numer`
-and `denom`, the functions  `add`, `sub`,
+Rational numbers now, in addition to the functions `numer`
+and `denom`, would have the functions  `add`, `sub`,
 `mul`, `div`, `equal`, `toString`.
 
 Here's a possible implementation:
@@ -120,7 +120,7 @@ Here is how one might use the new `Rational` abstraction:
 
 ### Data Abstraction
 
-In the above example rational numbers weren't always
+In the above example, rational numbers weren't always
 represented in their simplest form.
 
 One would expect the rational numbers to be *simplified*:
@@ -196,7 +196,7 @@ Add the functions `less` and `max` to the class `Rational`.
 
 Note that a simple name `x`, which refers to another member
 of the class, is an abbreviation of `this.x`. Thus, an equivalent
-way to formulate `less` is as follows.
+way to formulate `less` is as follows:
 
       def less(that: Rational) =
         this.numer * that.denom < that.numer * this.denom
@@ -220,7 +220,7 @@ with the given message string.
 
 Besides `require`, there is also `assert`.
 
-Assert also takes a condition and an optional message string as parameters. E.g.
+Assert also takes a condition and an optional message string as parameters. E.g.:
 
       val x = sqrt(y)
       assert(x >= 0)
@@ -228,7 +228,7 @@ Assert also takes a condition and an optional message string as parameters. E.g.
 Like `require`, a failing `assert` will also throw an exception, but it's a
 different one: `AssertionError` for `assert`, `IllegalArgumentException` for `require`.
 
-This reflects a difference in intent
+This reflects a difference in intent:
 
  - `require` is used to enforce a precondition on the caller of a function.
  - `assert` is used as to check the code of the function itself.
@@ -240,9 +240,9 @@ is called the *primary constructor* of the class.
 
 The primary constructor:
 
- - takes the parameters of the class
+ - takes the parameters of the class;
  - and executes all statements in the class body
-   (such as the `require` a couple of slides back).
+   (such as the `require` in one of the examples above).
 
 ### Auxiliary Constructors
 
@@ -271,7 +271,7 @@ are evaluated like the arguments of a normal function. That's it.
 The resulting expression, say, `new C(v1, …, vn)`, is
 already a value.
 
-Now suppose that we have a class definition,
+Now suppose that we have a class definition
 
       class C(x1, …, xn) {
         …
@@ -295,9 +295,9 @@ How is the following expression evaluated?
 The following three substitutions happen:
 
  - the substitution of the formal parameters `y1, …, ym` of the function `f` by the
-   arguments `w1, …, wm`,
+   arguments `w1, …, wm`;
  - the substitution of the formal parameters `x1, …, xn` of the class `C` by the class
-   arguments `v1, …, vn`,
+   arguments `v1, …, vn`;
  - the substitution of the self reference `this` by the value of the
    object `new C(v1, …, vn)`.
 
@@ -316,9 +316,8 @@ In Scala, we can eliminate this difference because operators can be used as iden
 
 Thus, an identifier can be:
 
- - *Alphanumeric*: starting with a letter, followed by a sequence of letters or numbers
- - *Symbolic*: starting with an operator symbol, followed by other operator symbols.
- - The underscore character `'_'` counts as a letter.
+ - *Alphanumeric*: starting with a letter, followed by a sequence of letters or numbers (the underscore character `'_'` counts as a letter);
+ - *Symbolic*: starting with an operator symbol, followed by other operator symbols;
  - Alphanumeric identifiers can also end in an underscore, followed by some operator symbols.
 
 Examples of identifiers:
@@ -327,7 +326,7 @@ Examples of identifiers:
 
 ### Operators for Rationals
 
-So, here is a more natural definition of class `Rational`:
+So, here is a more natural definition of the class `Rational`:
 
       class Rational(x: Int, y: Int) {
         private def gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
@@ -344,7 +343,7 @@ So, here is a more natural definition of class `Rational`:
         ...
       }
 
-and then rational numbers can be used like `Int` or `Double`:
+Then, rational numbers can be used like `Int` or `Double`:
 
       val x = new Rational(1, 2)
       val y = new Rational(1, 3)

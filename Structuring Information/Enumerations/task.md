@@ -13,7 +13,7 @@ of the possible note names and durations to a set of fixed alternatives.
 In the case of note names, the alternatives are either `A`, `B`, `C`,
 `D`, `E`, `F` or `G`. We can express the fact that note names are
 a fixed set of alternatives by using a sealed trait, but in contrast to
-the previous example alternatives are not case classes because they
+the previous example, alternatives are not case classes because they
 aggregate no information:
 
       sealed trait NoteName
@@ -44,7 +44,7 @@ On the other hand, if a concept of your program’s domain can be
 formulated in terms of an *has* relationship, you will express it
 with a case class:
 
-"A note *has* a name, a duration *and* an octave number."
+"A note *has* a name, a duration, *and* an octave number."
 
       case class Note(name: String, duration: String, octave: Int) extends Symbol
 

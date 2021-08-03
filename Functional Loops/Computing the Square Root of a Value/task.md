@@ -1,7 +1,7 @@
 
 ## Computing the Square Root of a Value 
 
-We will define in this section a method
+In this section, we will define a square root calculation method:
 
     /** Calculates the square root of parameter x */
     def sqrt(x: Double): Double = ...
@@ -38,7 +38,7 @@ Recursive methods need an explicit return type in Scala.
 
 For non-recursive methods, the return type is optional.
 
-Second, we define a method `improve` to improve an estimate and a test to check for termination:
+Second, we define a method `improve` to improve the estimate and a test to check for termination:
 
       def improve(guess: Double, x: Double) =
         (guess + x / guess) / 2

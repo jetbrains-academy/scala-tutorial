@@ -3,7 +3,7 @@
 
 We saw earlier that case classes are useful to aggregate information.
 However, sometimes you want to aggregate information without having to define
-a complete case class for it. In such a case you can use *tuples*:
+a complete case class for it. In such a case you can use *tuples*.
 
 
 

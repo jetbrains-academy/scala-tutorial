@@ -1,8 +1,8 @@
 
 ## Lexical Scoping
 
-Definitions of outer blocks are visible inside a block unless they are shadowed.
-Shadowed definitions are ones which are redefined in a lower scope.
+The definitions of outer blocks are visible inside the block unless they are shadowed.
+Shadowed definitions are those that are redefined in a lower scope.
 
 Therefore, we can simplify `sqrt` by eliminating redundant occurrences of the `x` parameter, which means
 the same thing everywhere:
@@ -41,7 +41,7 @@ separated by semicolons:
 ### Semicolons and infix operators
 
 One issue with Scala's semicolon convention is how to write expressions that span
-several lines. For instance:
+several lines. For instance, these two lines:
 ```
       someLongExpression
 ```
@@ -57,15 +57,15 @@ would be interpreted as *two* expressions:
 ```
 There are two ways to overcome this problem.
 
-You could write the multi-line expression in parentheses, because semicolons
-are never inserted inside `(…)`:
+You could write the multi-line expression in parentheses because semicolons
+are never used inside `(…)`:
 ```
       (someLongExpression
 ```
 ```
     + someOtherExpression)
 ```
-Or you could write the operator on the first line, because this tells the Scala
+Or otherwise, you could write the operator on the first line because this tells the Scala
 compiler that the expression is not yet finished:
 ```
       someLongExpression +
@@ -76,7 +76,7 @@ compiler that the expression is not yet finished:
 ### Top-Level Definitions
 
 In real Scala programs, `def` and `val` definitions must be written
-within a top-level *object definition*, in .scala file:
+within a top-level *object definition*, in a .scala file:
 
       object MyExecutableProgram {
         val myVal = …
@@ -84,7 +84,7 @@ within a top-level *object definition*, in .scala file:
       }
 
 The above code defines an *object* named `MyExecutableProgram`. You
-can refer to its *members* using the usual dot notation:
+can refer to its *members* using the common dot notation:
 
       MyExecutableProgram.myMethod
 
@@ -94,7 +94,7 @@ is not nested within another definition.
 ### Packages and Imports 
 
 Top-level definitions can be organized in *packages*.
-To place a class or object inside a package, use a package clause
+To place a class or an object inside a package, use a package clause
 at the top of your source file:
 
       // file foo/Bar.scala
@@ -140,8 +140,8 @@ Some entities are automatically imported in any Scala program.
 
 These are:
 
- - All members of package `scala`
- - All members of package `java.lang`
+ - All members of the `scala` package;
+ - All members of the  `java.lang` package;
  - All members of the singleton object `scala.Predef`.
 
 Here are the fully qualified names of some types and functions
@@ -172,9 +172,9 @@ For instance, here is the "Hello World!" program in Scala:
         def main(args: Array[String]) = println("hello world!")
       }
 
-Once this program is compiled, you can start it from the command line with
+Once this program is compiled, you can start it from the command line with the following command:
 
       $ scala Hello
 
 ## Exercise
-Complete the expression for `y` in the `Baz` object for it  to represent the sum of `x` fields from the objects `Foo` and `Bar`.
+Complete the expression for `y` in the `Baz` object to make it  represent the sum of `x` fields from the objects `Foo` and `Bar`.
