@@ -34,7 +34,7 @@ You can also use a lower bound for a type variable.
 
       A >: Reptile
 
-The type parameter `A` can range over only the *supertypes* of `Reptile`.
+The type parameter `A` can range only over the *supertypes* of `Reptile`.
 
 So `A` could be one of `Reptile`, `Animal`, `AnyRef`, or `Any`.
 
