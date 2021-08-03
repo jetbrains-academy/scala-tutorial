@@ -162,7 +162,7 @@ Here,
  - `T` is contravariant and appears only as a method parameter type
  - `U` is covariant and appears only as a method result type
 
-So the method has been checked and found OK.
+So the method checks out OK.
 
 ## Making Classes Covariant 
 
