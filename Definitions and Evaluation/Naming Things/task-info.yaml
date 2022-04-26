@@ -3,7 +3,7 @@ files:
 - name: src/DefinitionsAndEvaluation.scala
   visible: true
   placeholders:
-  - offset: 0
+  - offset: 33
     length: 0
     placeholder_text: // Complete the method evaluating the area of a disk
   - offset: 68
