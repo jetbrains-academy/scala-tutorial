@@ -35,4 +35,4 @@ Let’s create some instances of `BankAccount` and `Note` and manipulate them.
 ## Exercise
 
 - Deposit `100` to the account.
-- Create a `c3` `Note` instance.
+- Create a `C3` `Note` instance.

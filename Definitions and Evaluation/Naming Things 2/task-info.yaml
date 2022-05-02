@@ -3,15 +3,6 @@ files:
 - name: src/DefinitionsAndEvaluation.scala
   visible: true
   placeholders:
-  - offset: 0
-    length: 6
-    placeholder_text: // TODO
-    dependency:
-      lesson: Definitions and Evaluation
-      task: Naming Things
-      file: src/DefinitionsAndEvaluation.scala
-      placeholder: 1
-      is_visible: false
   - offset: 123
     length: 14
     placeholder_text: // reuse the square method here
