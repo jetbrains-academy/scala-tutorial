@@ -9,8 +9,8 @@ class Test extends RefSpec with Matchers{
   }
 
   def `check area`(): Unit = {
-    DefinitionsAndEvaluation.area(10) shouldBe 314.159
-    DefinitionsAndEvaluation.area(20) shouldBe 314.159*4
+    DefinitionsAndEvaluation.area(10) should  (be (314.159) or be (Math.PI * 100))
+    DefinitionsAndEvaluation.area(20) should (be (314.159*4) or be (Math.PI * 400))
   }
 
 }
