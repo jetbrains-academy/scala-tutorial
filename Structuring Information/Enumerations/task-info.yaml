@@ -3,10 +3,10 @@ files:
 - name: src/StructuringInformation.scala
   visible: true
   placeholders:
-  - offset: 416
+  - offset: 295
     length: 3
     placeholder_text: //return half of a whole
-  - offset: 426
+  - offset: 305
     length: 12
     placeholder_text: "/*this should be one of the casesq, for a quarter duration*/"
 - name: test/Test.scala

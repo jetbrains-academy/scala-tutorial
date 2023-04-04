@@ -1,7 +1,4 @@
-import org.scalatest.flatspec.AnyFlatSpec
-import org.scalatest.matchers.should
-
-object RationalArithmetic extends AnyFlatSpec with should.Matchers {
+object RationalArithmetic {
   class Rational(x: Int, y: Int) {
     private def gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
     private val g = gcd(x, y)

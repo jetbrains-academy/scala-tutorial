@@ -1,7 +1,4 @@
-import org.scalatest.flatspec.AnyFlatSpec
-import org.scalatest.matchers.should
-
-object StructuringInformation extends AnyFlatSpec with should.Matchers {
+object StructuringInformation {
 
   sealed trait Symbol
   case class Note(name: String, duration: String, octave: Int) extends Symbol

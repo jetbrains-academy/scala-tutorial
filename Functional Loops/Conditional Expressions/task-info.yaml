@@ -3,10 +3,10 @@ files:
 - name: src/FunctionalLoops.scala
   visible: true
   placeholders:
-  - offset: 185
+  - offset: 64
     length: 6
     placeholder_text: /*insert the corner case condition for the factorial evaluation*/
-  - offset: 204
+  - offset: 83
     length: 20
     placeholder_text: //insert the common case factorial expression here
 - name: test/Test.scala

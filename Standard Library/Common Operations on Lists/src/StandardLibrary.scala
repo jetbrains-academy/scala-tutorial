@@ -1,7 +1,4 @@
-import org.scalatest.flatspec.AnyFlatSpec
-import org.scalatest.matchers.should
-
-object StandardLibrary extends AnyFlatSpec with should.Matchers {
+object StandardLibrary {
 
   def optionMap(x: Option[Int]) : Option[Int]= {
     x.map(x => x + 1)

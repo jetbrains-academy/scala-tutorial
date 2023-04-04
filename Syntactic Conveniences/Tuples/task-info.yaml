@@ -5,7 +5,7 @@ files:
 - name: src/SyntacticConveniences.scala
   visible: true
   placeholders:
-  - offset: 199
+  - offset: 78
     length: 6
     placeholder_text: /*create the tuple here*/
 - name: test/Test.scala

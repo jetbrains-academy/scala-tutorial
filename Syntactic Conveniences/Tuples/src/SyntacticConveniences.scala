@@ -1,7 +1,4 @@
-import org.scalatest.flatspec.AnyFlatSpec
-import org.scalatest.matchers.should
-
-object SyntacticConveniences extends AnyFlatSpec with should.Matchers {
+object SyntacticConveniences {
   def pair(i: Int, s: String): (Int, String) = (i, s)
 
   def main(args: Array[String]): Unit = {

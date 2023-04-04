@@ -1,7 +1,4 @@
-import org.scalatest.flatspec.AnyFlatSpec
-import org.scalatest.matchers.should
-
-object StructuringInformation extends AnyFlatSpec with should.Matchers {
+object StructuringInformation {
   sealed trait Duration
   case object Whole   extends Duration
   case object Half    extends Duration

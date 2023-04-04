@@ -1,9 +1,6 @@
-import org.scalatest.flatspec.AnyFlatSpec
-import org.scalatest.matchers.should
-
 import scala.collection.mutable
 
-object LazyEvaluation extends AnyFlatSpec with should.Matchers {
+object LazyEvaluation {
   val builder = new mutable.StringBuilder
   val x      = { builder += 'x'; 1 }
   lazy val y = { builder += 'y'; 2 }

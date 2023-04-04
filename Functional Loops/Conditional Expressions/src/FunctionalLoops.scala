@@ -1,7 +1,4 @@
-import org.scalatest.flatspec.AnyFlatSpec
-import org.scalatest.matchers.should
-
-object FunctionalLoops extends AnyFlatSpec with should.Matchers {
+object FunctionalLoops {
   def factorial(n: Int): Int =
     if (n == 0) 1
     else factorial(n - 1) * n
