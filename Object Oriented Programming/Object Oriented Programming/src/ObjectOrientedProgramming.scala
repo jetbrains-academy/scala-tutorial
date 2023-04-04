@@ -1,6 +1,4 @@
-import org.scalatest.{FlatSpec, Matchers}
-
-object ObjectOrientedProgramming{
+object ObjectOrientedProgramming {
   var nonEmptyExample = new NonEmpty(7, Empty, Empty)
 
   def main(args: Array[String]): Unit = {

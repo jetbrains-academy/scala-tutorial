@@ -5,11 +5,11 @@ files:
 - name: src/RationalArithmetic.scala
   visible: true
   placeholders:
-  - offset: 561
+  - offset: 608
     length: 71
     placeholder_text: /*create a Rational with appropriate expressions for numerator
       and denomenator*/
-  - offset: 665
+  - offset: 712
     length: 71
     placeholder_text: /*create a Rational with appropriate expressions for numerator
       and denomenator*/

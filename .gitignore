@@ -1,0 +1,15 @@
+### Intellij ###
+.idea
+out/
+
+### Java ###
+*.class
+*.log
+
+### macOS ###
+.DS_Store
+
+### SBT ###
+target/
+project/plugins/project/
+.bsp

@@ -1,8 +1,8 @@
 import FunctionalLoops.factorial
-import org.scalatest.Matchers
+import org.scalatest.matchers.should
 import org.scalatest.refspec.RefSpec
 
-class Test extends RefSpec with Matchers{
+class Test extends RefSpec with should.Matchers {
 
   def `check factorial`(): Unit = {
     factorial(0) shouldBe 1

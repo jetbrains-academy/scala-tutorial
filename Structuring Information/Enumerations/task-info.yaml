@@ -3,12 +3,12 @@ files:
 - name: src/StructuringInformation.scala
   visible: true
   placeholders:
-  - offset: 369
+  - offset: 416
     length: 3
     placeholder_text: //return half of a whole
-  - offset: 379
+  - offset: 426
     length: 12
-    placeholder_text: /*this should be one of the casesq, for a quarter duration*/
+    placeholder_text: "/*this should be one of the casesq, for a quarter duration*/"
 - name: test/Test.scala
   visible: false
 - name: build.sbt

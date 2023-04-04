@@ -3,13 +3,13 @@ files:
 - name: src/StandardLibrary.scala
   visible: true
   placeholders:
-  - offset: 153
+  - offset: 200
     length: 17
     placeholder_text: /*map the x values to x + 1*/
-  - offset: 232
+  - offset: 279
     length: 25
     placeholder_text: /*filter the x values to return only even ones*/
-  - offset: 320
+  - offset: 367
     length: 27
     placeholder_text: /*use flatMap to return the option for x + 1*/
 - name: test/Test.scala

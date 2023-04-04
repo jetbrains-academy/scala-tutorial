@@ -1,8 +1,8 @@
 import SyntacticConveniences.{Range, average, divide}
-import org.scalatest.Matchers
+import org.scalatest.matchers.should
 import org.scalatest.refspec.RefSpec
 
-class Test extends RefSpec with Matchers{
+class Test extends RefSpec with should.Matchers {
 
   def `default parameters`(): Unit = {
     val xs = Range(start = 1, end = 10)

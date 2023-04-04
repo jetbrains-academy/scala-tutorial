@@ -1,8 +1,8 @@
 import DefinitionsAndEvaluation.triangleArea
-import org.scalatest.refspec.RefSpec
-import org.scalatest.Matchers
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should
 
-class Test extends RefSpec with Matchers {
+class Test extends AnyFlatSpec with should.Matchers {
 
   def `check triangle area`(): Unit = {
     triangleArea(3, 4) shouldBe 6.0

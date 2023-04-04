@@ -1,4 +1,4 @@
-import scala.collection.compat.immutable.LazyList
+import scala.collection.immutable.LazyList
 
 object LazyEvaluation {
   var rec = 0

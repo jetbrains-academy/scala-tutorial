@@ -1,8 +1,8 @@
 import TypeClasses.rationalOrder
-import org.scalatest.Matchers
+import org.scalatest.matchers.should
 import org.scalatest.refspec.RefSpec
 
-class Test extends RefSpec with Matchers{
+class Test extends RefSpec with should.Matchers {
 
   def `rational Ordering`(): Unit = {
     val testThird      = new Rational(1, 3)

@@ -1,7 +1,7 @@
 
 lazy val `Equality` = (project in file("."))
   .settings(
-    scalaSource in Compile := baseDirectory.value / "src",
-    scalaSource in Test := baseDirectory.value / "test",
-    libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5"
+    Compile / scalaSource := baseDirectory.value / "src",
+    Test / scalaSource := baseDirectory.value / "test",
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.15"
   )

@@ -12,6 +12,6 @@ files:
     length: 22
     placeholder_text: //here we need to place an expression for evaluating a better
       guess
-- name: test/TestSpec.scala
+- name: test/Test.scala
   visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLScjhcYFPpvouPszTzh1ePod4-mJkYZcrA5iiGjH4nybtiNEvQ/viewform?usp=pp_url&entry.2103429047=Functional+Loops+/+Computing+the+Square+Root+of+a+Value

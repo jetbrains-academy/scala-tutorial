@@ -1,7 +1,7 @@
-import org.scalatest.Matchers
+import org.scalatest.matchers.should
 import org.scalatest.refspec.RefSpec
 
-class Test extends RefSpec with Matchers {
+class Test extends RefSpec with should.Matchers {
 
   def `size exercise`(): Unit = {
     PolymorphicTypes.size(Nil) shouldBe 0
