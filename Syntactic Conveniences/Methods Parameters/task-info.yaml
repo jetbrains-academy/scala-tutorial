@@ -5,7 +5,7 @@ files:
   placeholders:
   - offset: 83
     length: 3
-    placeholder_text: "/*add a default parameter, so the step is 1*/"
+    placeholder_text: /*add a default parameter, so the step is 1*/
   - offset: 116
     length: 4
     placeholder_text: /*add an expression for the repeated parameter*/

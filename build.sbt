@@ -1,4 +1,4 @@
-ThisBuild / scalaVersion := "3.2.2"
+ThisBuild / scalaVersion := "2.13.10"
 ThisBuild / crossScalaVersions := Seq("3.2.2", "2.13.10")
 
 lazy val subprojects = new CompositeProject {

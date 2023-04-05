@@ -1,5 +1,3 @@
-import scala.collection.immutable.LazyList
-
 object LazyEvaluation {
   var rec = 0
   def llRange(lo: Int, hi: Int): LazyList[Int] = {

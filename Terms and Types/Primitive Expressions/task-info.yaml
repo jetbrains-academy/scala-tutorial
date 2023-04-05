@@ -8,7 +8,7 @@ files:
     placeholder_text: //Finish the greetings here
   - offset: 122
     length: 1
-    placeholder_text: "//Insert a number here, so the sum will be 4"
+    placeholder_text: //Insert a number here, so the sum will be 4
 - name: test/Test.scala
   visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLScjhcYFPpvouPszTzh1ePod4-mJkYZcrA5iiGjH4nybtiNEvQ/viewform?usp=pp_url&entry.2103429047=Terms+and+Types+/+Primitive+Expressions
