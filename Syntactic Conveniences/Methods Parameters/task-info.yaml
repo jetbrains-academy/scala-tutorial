@@ -9,7 +9,7 @@ files:
   - offset: 116
     length: 4
     placeholder_text: /*add an expression for the repeated parameter*/
-  - offset: 219
+  - offset: 215
     length: 10
     placeholder_text: /*the output result of the divide should be a tuple of Ints*/
 - name: test/Test.scala

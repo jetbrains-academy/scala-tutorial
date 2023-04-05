@@ -3,10 +3,10 @@ files:
 - name: src/TermsAndTypes.scala
   visible: true
   placeholders:
-  - offset: 70
+  - offset: 69
     length: 8
     placeholder_text: //Finish the greetings here
-  - offset: 123
+  - offset: 122
     length: 1
     placeholder_text: "//Insert a number here, so the sum will be 4"
 - name: test/Test.scala

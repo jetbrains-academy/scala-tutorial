@@ -11,7 +11,7 @@ files:
     placeholder_text: /*put here an appropriate type of an f output result*/
   - offset: 168
     length: 1
-    placeholder_text: // TODO
+    placeholder_text: /* TODO */
   - offset: 202
     length: 1
     placeholder_text: /*here you need to insert initial acc value*/

@@ -3,16 +3,16 @@ files:
 - name: src/TermsAndTypes.scala
   visible: true
   placeholders:
-  - offset: 69
+  - offset: 68
     length: 11
     placeholder_text: //invoke the toHexString method here
-  - offset: 136
+  - offset: 135
     length: 8
     placeholder_text: /*invoke the contains method here*/
-  - offset: 194
+  - offset: 193
     length: 4
     placeholder_text: /*invoke the drop method here*/
-  - offset: 248
+  - offset: 247
     length: 4
     placeholder_text: /*invoke the take method here*/
 - name: test/Test.scala
