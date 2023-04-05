@@ -14,6 +14,4 @@ files:
     placeholder_text: /*use flatMap to return the option for x + 1*/
 - name: test/Test.scala
   visible: false
-- name: build.sbt
-  visible: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLScjhcYFPpvouPszTzh1ePod4-mJkYZcrA5iiGjH4nybtiNEvQ/viewform?usp=pp_url&entry.2103429047=Standard+Library+/+Common+Operations+on+Lists

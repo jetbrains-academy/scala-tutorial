@@ -1,7 +1,5 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: src/BankAccount.scala
   visible: true
 - name: src/Note.scala

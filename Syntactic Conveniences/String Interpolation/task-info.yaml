@@ -1,7 +1,5 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: test/Test.scala
   visible: false
 - name: src/SyntacticConveniences.scala

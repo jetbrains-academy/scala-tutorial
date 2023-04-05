@@ -6,7 +6,15 @@ lazy val subprojects = new CompositeProject {
     .filter(_.isDirectory)
     .filter(isNotIgnored)
     .flatMap(getTasks(_))
-    .map(p => Project(p.getName.replace(" ", "-"), p).settings(name := p.getName))
+    .map { p =>
+      Project(p.getName.replace(" ", "-"), p)
+        .settings(name := p.getName)
+        .settings(
+          Compile / scalaSource := baseDirectory.value / "src",
+          Test / scalaSource := baseDirectory.value / "test",
+          libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.15" % Test
+        )
+    }
 }
 
 def getTasks(dir: File, level: Int = 0): Seq[File] =

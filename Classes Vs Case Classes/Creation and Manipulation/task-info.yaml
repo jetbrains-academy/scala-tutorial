@@ -1,16 +1,14 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: src/ClassesVsCaseClasses.scala
   visible: true
   placeholders:
-  - offset: 106
-    length: 23
-    placeholder_text: /*create a c3 note with a quarter duration*/
   - offset: 69
     length: 25
     placeholder_text: /*deposit 100 on the Alice's account*/
+  - offset: 106
+    length: 23
+    placeholder_text: /*create a c3 note with a quarter duration*/
 - name: src/BankAccount.scala
   visible: true
 - name: src/Note.scala

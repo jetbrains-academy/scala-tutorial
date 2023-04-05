@@ -1,7 +1,5 @@
 type: theory
 files:
-- name: build.sbt
-  visible: false
 - name: src/ClassesVsCaseClasses.scala
   visible: true
 - name: src/Note.scala
