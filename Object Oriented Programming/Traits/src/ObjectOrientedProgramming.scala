@@ -1,4 +1,4 @@
-object ObjectOrientedProgramming{
+object ObjectOrientedProgramming {
   abstract class Reducer(init: Int) {
     def combine(x: Int, y: Int): Int
     def reduce(xs: List[Int]): Int =

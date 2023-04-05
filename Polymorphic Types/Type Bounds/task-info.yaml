@@ -7,10 +7,10 @@ files:
 - name: src/TypeBounds.scala
   visible: true
   placeholders:
-  - offset: 149
+  - offset: 150
     length: 5
     placeholder_text: /*insert a correct lower bound Type to include Zebra*/
-  - offset: 158
+  - offset: 159
     length: 6
     placeholder_text: /*insert an upper bound type to include Animal*/
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLScjhcYFPpvouPszTzh1ePod4-mJkYZcrA5iiGjH4nybtiNEvQ/viewform?usp=pp_url&entry.2103429047=Polymorphic+Types+/+Type+Bounds

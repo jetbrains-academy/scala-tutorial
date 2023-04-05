@@ -1,4 +1,4 @@
-object ClassesVsCaseClasses{
+object ClassesVsCaseClasses {
   val aliceAccount = new BankAccount
   val bobAccount   = new BankAccount
 

@@ -1,4 +1,4 @@
-object TypeBounds{
+object TypeBounds {
   class Animal
 
   class Reptile extends Animal

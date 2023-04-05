@@ -1,4 +1,4 @@
-object StandardLibrary{
+object StandardLibrary {
   val cond: (Int, Int) => Boolean = (_: Int) < (_: Int)
   def insert(x: Int, xs: List[Int]): List[Int] =
     xs match {

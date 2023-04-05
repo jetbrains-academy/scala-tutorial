@@ -1,4 +1,4 @@
-object SyntacticConveniences{
+object SyntacticConveniences {
   def greet(name: String): String =
     s"Hello, $name!"
 

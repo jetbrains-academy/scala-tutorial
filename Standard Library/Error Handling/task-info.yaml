@@ -3,7 +3,7 @@ files:
 - name: src/StandardLibrary.scala
   visible: true
   placeholders:
-  - offset: 130
+  - offset: 131
     length: 13
     placeholder_text: /*map the successful results with triple()*/
 - name: test/Test.scala

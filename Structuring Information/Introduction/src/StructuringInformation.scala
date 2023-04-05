@@ -1,4 +1,4 @@
-object StructuringInformation{
+object StructuringInformation {
   case class Note(name: String, duration: String, octave: Int)
 
   def setUpC3Note(): Note = {

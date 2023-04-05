@@ -1,7 +1,7 @@
-import org.scalatest.matchers.should
+import org.scalatest.matchers.should.Matchers
 import org.scalatest.refspec.RefSpec
 
-class Test extends RefSpec with should.Matchers {
+class Test extends RefSpec with Matchers {
 
   def `check option map`(): Unit = {
     StandardLibrary.optionMap(Some(2)) shouldBe Some(3)

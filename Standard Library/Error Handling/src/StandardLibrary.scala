@@ -1,4 +1,4 @@
-object StandardLibrary{
+object StandardLibrary {
 
   def triple(x: Int): Int = 3 * x
 

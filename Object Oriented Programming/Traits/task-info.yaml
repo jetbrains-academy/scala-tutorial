@@ -5,10 +5,10 @@ files:
 - name: src/ObjectOrientedProgramming.scala
   visible: true
   placeholders:
-  - offset: 329
+  - offset: 330
     length: 5
     placeholder_text: /*insert an appropriate expression*/
-  - offset: 413
+  - offset: 414
     length: 5
     placeholder_text: /*insert an appropriate expression*/
 - name: test/Test.scala

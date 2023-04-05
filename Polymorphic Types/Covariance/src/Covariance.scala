@@ -1,10 +1,10 @@
 object Covariance {
   class Animal[+T](val animal: T)
 
-  trait AnimalType
-  class Reptile extends AnimalType
+  trait AnimalKind
+  class Reptile extends AnimalKind
 
-  class Mammal extends AnimalType
+  class Mammal extends AnimalKind
 
   class Zebra extends Mammal
 

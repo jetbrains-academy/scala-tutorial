@@ -1,6 +1,6 @@
 import scala.annotation.tailrec
 
-object TailRecursion{
+object TailRecursion {
 
   def factorial(n: Int): Int = {
     @tailrec
