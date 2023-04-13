@@ -1,27 +1,24 @@
 object Covariance {
-  class Animal[+T](val animal: T)
 
-  trait AnimalKind
-  class Reptile extends AnimalKind
+  trait Animal
+  case object Reptile extends Animal
 
-  class Mammal extends AnimalKind
+  abstract class Mammal extends Animal
+  case object Zebra extends Mammal
 
-  class Zebra extends Mammal
-
-  class AnimalVet(val animal:Animal[Mammal])
+  class AnimalVet[+T](val animal: T)
 
   def main(args: Array[String]): Unit = {
-    val reptile = new Reptile
-    val zebra = new Zebra
-
-    val reptileAnimal = new Animal[Reptile](reptile)
-    val zebraAnimal = new Animal[Zebra](zebra)
+    val reptileVet = new AnimalVet(Reptile)
+    val zebraVet = new AnimalVet(Zebra)
 
     //Uncomment the line below to see if the reptileAnimal passes type-checking
-    //val reptileVet = new AnimalVet(reptileAnimal)
-    val zebraVet = new AnimalVet(zebraAnimal)
+    // val vet: AnimalVet[Mammal] = reptileVet
+    val mammalVet: AnimalVet[Mammal] = zebraVet
 
-    println(zebraVet)
+    println(reptileVet.animal.getClass.getSimpleName)
+    println(zebraVet.animal.getClass.getSimpleName)
+    println(mammalVet.animal.getClass.getSimpleName)
   }
 }
 
