@@ -1,6 +1,4 @@
-import org.scalatest.{FlatSpec, Matchers}
-
-object StructuringInformation extends FlatSpec with Matchers {
+object StructuringInformation {
 
   sealed trait Symbol
   case class Note(name: String, duration: String, octave: Int) extends Symbol

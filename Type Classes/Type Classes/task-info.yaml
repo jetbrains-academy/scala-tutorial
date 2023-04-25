@@ -1,7 +1,5 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: src/Rational.scala
   visible: true
 - name: src/Sorting.scala

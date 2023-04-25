@@ -1,6 +1,6 @@
 import DefinitionsAndEvaluation.triangleArea
+import org.scalatest.matchers.should.Matchers
 import org.scalatest.refspec.RefSpec
-import org.scalatest.Matchers
 
 class Test extends RefSpec with Matchers {
 

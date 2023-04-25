@@ -4,7 +4,7 @@ object SyntacticConveniences {
 
 
   def average(x: Int, xs: Int*): Double =
-    (x :: xs.to[List]).sum.toDouble / (xs.size + 1)
+    (x :: xs.toList).sum.toDouble / (xs.size + 1)
 
 
   type Result = Either[String, (Int, Int)]

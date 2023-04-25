@@ -1,13 +1,11 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: test/Test.scala
   visible: false
 - name: src/Covariance.scala
   visible: true
   placeholders:
-  - offset: 34
+  - offset: 166
     length: 19
     placeholder_text: /*complete  the class definition with covariance and animal
       parameter*/

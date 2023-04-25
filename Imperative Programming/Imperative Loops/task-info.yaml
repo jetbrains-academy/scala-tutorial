@@ -1,17 +1,15 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: src/ImperativeProgramming.scala
   visible: true
   placeholders:
-  - offset: 80
+  - offset: 81
     length: 1
     placeholder_text: /*insert the initial resul value*/
-  - offset: 99
+  - offset: 100
     length: 1
     placeholder_text: /*insert the initial i value*/
-  - offset: 162
+  - offset: 163
     length: 1
     placeholder_text: /*insert the i step*/
 - name: test/Test.scala

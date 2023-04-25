@@ -1,7 +1,5 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: src/BankAccount.scala
   visible: true
 - name: src/Note.scala
@@ -9,16 +7,16 @@ files:
 - name: src/ClassesVsCaseClasses.scala
   visible: true
   placeholders:
-  - offset: 50
+  - offset: 51
     length: 15
     placeholder_text: /*create a new BankAccount here*/
-  - offset: 87
+  - offset: 88
     length: 15
     placeholder_text: /*create a new BankAccount here*/
-  - offset: 119
+  - offset: 120
     length: 23
     placeholder_text: /*create a new c3 note here with a quarter duration*/
-  - offset: 158
+  - offset: 159
     length: 23
     placeholder_text: /*create a new c3 note here with a quarter duration*/
 - name: test/Test.scala

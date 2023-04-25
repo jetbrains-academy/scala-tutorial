@@ -1,11 +1,9 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: src/ObjectOrientedProgramming.scala
   visible: true
   placeholders:
-  - offset: 101
+  - offset: 59
     length: 29
     placeholder_text: /*Create a NonEmpty contatining 7*/
 - name: scala_type_hierarchy.png

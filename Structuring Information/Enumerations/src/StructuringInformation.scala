@@ -1,6 +1,4 @@
-import org.scalatest.{FlatSpec, Matchers}
-
-object StructuringInformation extends FlatSpec with Matchers {
+object StructuringInformation {
   sealed trait Duration
   case object Whole   extends Duration
   case object Half    extends Duration

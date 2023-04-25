@@ -1,16 +1,14 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: test/Test.scala
   visible: false
 - name: src/SyntacticConveniences.scala
   visible: true
   placeholders:
-  - offset: 70
+  - offset: 71
     length: 1
     placeholder_text: /*insert the correct prefix here*/
-  - offset: 143
+  - offset: 144
     length: 19
     placeholder_text: /*introduce the dynamic value here and make it uppercase*/
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLScjhcYFPpvouPszTzh1ePod4-mJkYZcrA5iiGjH4nybtiNEvQ/viewform?usp=pp_url&entry.2103429047=Syntactic+Conveniences+/+String+Interpolation

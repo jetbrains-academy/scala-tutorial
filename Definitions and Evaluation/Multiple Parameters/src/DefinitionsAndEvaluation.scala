@@ -1,6 +1,4 @@
-import org.scalatest.{FlatSpec, Matchers}
-
-object DefinitionsAndEvaluation extends FlatSpec with Matchers {
+object DefinitionsAndEvaluation {
 
   def triangleArea(base: Double, height: Double): Double =
       base * height / 2.0

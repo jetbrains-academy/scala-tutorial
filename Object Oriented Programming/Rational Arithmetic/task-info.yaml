@@ -1,15 +1,13 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: src/RationalArithmetic.scala
   visible: true
   placeholders:
-  - offset: 561
+  - offset: 487
     length: 71
     placeholder_text: /*create a Rational with appropriate expressions for numerator
       and denomenator*/
-  - offset: 665
+  - offset: 591
     length: 71
     placeholder_text: /*create a Rational with appropriate expressions for numerator
       and denomenator*/

@@ -1,6 +1,4 @@
-import org.scalatest.{FlatSpec, Matchers}
-
-object StandardLibrary extends FlatSpec with Matchers {
+object StandardLibrary {
 
   def optionMap(x: Option[Int]) : Option[Int]= {
     x.map(x => x + 1)

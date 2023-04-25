@@ -18,6 +18,6 @@ object SyntacticConveniences {
 
   def main(args: Array[String]): Unit = {
     println("function output:")
-    println(function(Array(1, 2, 3, 4), Array(1, 2, 3)).deep.mkString("\n"))
+    println(function(Array(1, 2, 3, 4), Array(1, 2, 3)).mkString("\n"))
   }
 }

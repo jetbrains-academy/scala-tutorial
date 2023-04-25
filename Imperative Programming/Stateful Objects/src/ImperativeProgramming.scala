@@ -1,4 +1,4 @@
-object ImperativeProgramming{
+object ImperativeProgramming {
 
   def main(args: Array[String]): Unit = {
     val x = new BankAccount

@@ -1,4 +1,4 @@
-object DefinitionsAndEvaluation{
+object DefinitionsAndEvaluation {
 
   def area(x: Double) = Math.PI * x * x
 

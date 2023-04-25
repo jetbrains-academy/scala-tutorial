@@ -1,4 +1,4 @@
-import org.scalatest.{Matchers}
+import org.scalatest.matchers.should.Matchers
 import org.scalatest.refspec.RefSpec
 
 class TestSpec extends RefSpec with Matchers  {

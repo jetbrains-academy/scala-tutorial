@@ -1,4 +1,4 @@
-object ImperativeProgramming{
+object ImperativeProgramming {
   def factorial(n: Int): Int = {
     var result = 1
     var i      = 2

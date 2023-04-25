@@ -1,6 +1,4 @@
-import org.scalatest.{FlatSpec, Matchers}
-
-object SyntacticConveniences extends FlatSpec with Matchers {
+object SyntacticConveniences {
   def pair(i: Int, s: String): (Int, String) = (i, s)
 
   def main(args: Array[String]): Unit = {

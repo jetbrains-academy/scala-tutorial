@@ -1,14 +1,12 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: src/ObjectOrientedProgramming.scala
   visible: true
   placeholders:
-  - offset: 482
+  - offset: 330
     length: 5
     placeholder_text: /*insert an appropriate expression*/
-  - offset: 392
+  - offset: 414
     length: 5
     placeholder_text: /*insert an appropriate expression*/
 - name: test/Test.scala

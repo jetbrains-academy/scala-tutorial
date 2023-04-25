@@ -1,7 +1,7 @@
-import org.scalatest.{FlatSpec, Matchers}
+import scala.collection.mutable
 
-object LazyEvaluation extends FlatSpec with Matchers {
-  val builder = new StringBuilder
+object LazyEvaluation {
+  val builder = new mutable.StringBuilder
   val x      = { builder += 'x'; 1 }
   lazy val y = { builder += 'y'; 2 }
   def z      = { builder += 'z'; 3 }

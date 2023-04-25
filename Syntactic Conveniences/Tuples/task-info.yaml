@@ -1,11 +1,9 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: src/SyntacticConveniences.scala
   visible: true
   placeholders:
-  - offset: 152
+  - offset: 78
     length: 6
     placeholder_text: /*create the tuple here*/
 - name: test/Test.scala

@@ -1,11 +1,9 @@
 type: edu
 files:
-- name: build.sbt
-  visible: false
 - name: src/LazyEvaluation.scala
   visible: true
   placeholders:
-  - offset: 171
+  - offset: 138
     length: 5
     placeholder_text: /*complete the declaration for y to be executed lazy*/
 - name: test/Test.scala
