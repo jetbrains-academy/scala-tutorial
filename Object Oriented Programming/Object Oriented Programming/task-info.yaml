@@ -5,7 +5,7 @@ files:
   placeholders:
   - offset: 59
     length: 29
-    placeholder_text: /*Create a NonEmpty contatining 7*/
+    placeholder_text: /*Create a NonEmpty containing 7*/
 - name: scala_type_hierarchy.png
   visible: false
 - name: src/IntSet.scala
