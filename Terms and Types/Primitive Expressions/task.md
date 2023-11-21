@@ -1,5 +1,5 @@
 
- ##Scala Tutorial
+ ## Scala Tutorial
 
  The following set of sections provides a quick tutorial on the Scala language.
 
@@ -9,7 +9,7 @@
  The target audience is people who already have *some* experience of programming and who are familiar with
  the JVM.
 
- ##Elements of Programming
+ ## Elements of Programming
 
  Programming languages give programmers ways to express computations.
 
